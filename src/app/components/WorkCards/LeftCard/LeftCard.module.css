@@ -1,0 +1,107 @@
+/* app/components/WorkCards/LeftCard/LeftCard.module.css */
+
+.main {
+  display: flex; /* Use flexbox to arrange children horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  height: 35em; /* Adjust as necessary */
+  margin: 20px auto; /* Centers the main container */
+}
+
+.leftCardImageContainer {
+  position: relative;  /* Required for Next.js Image layout="fill" */
+  width: 45%;          /* Allow the container to be 30% of the parent's width */
+  height: 100%;        /* Ensure it takes the full height */
+}
+
+.leftCardImage {
+  position: absolute;  /* Required for layout="fill" */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Ensures the image covers the container */
+  border-radius: 30px 0 0 30px; /* Optional rounded corners */
+}
+
+.card {
+  flex-grow: 1;        /* Make the card take up the remaining space */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 10px; /* Adjust spacing between cards if multiple */
+  border-radius: 0 30px 30px 0; /* Optional rounded corners */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3); /* Optional shadow */
+  background-color: #ecf0f1;
+  overflow: hidden; /* Ensures image fits within card */
+  z-index: 1; /* Ensure card is above image */
+}
+
+.cardContent {
+  padding-top: 2em;
+  padding-left: 2em;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children to the top */
+  height: 100%; /* Take the full height of the card */
+}
+
+.cardTitle {
+  font-size: 3rem; /* Adjust title size */
+  margin: 0; /* Remove default margin */
+  color: #3496d3; /* Optional text colour */
+}
+
+.cardDescription {
+  font-size: 1rem; /* Adjust description size */
+  color: #3496d3; /* Optional text colour */
+}
+
+.pullQuotes {
+  margin-top: 1.5em; /* Space above the quotes */
+  display: flex;
+  flex-direction: column; /* Stack quotes vertically */
+}
+
+.quote {
+  font-size: 1.2rem; /* Adjust quote size */
+  color: #3496d3; /* Optional text colour */
+  border-left: 4px solid #3496d3; /* Left border for styling */
+  padding-left: 1em; /* Space between border and text */
+  margin: 0.5em 0; /* Space between quotes */
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftCardImageContainer {
+    width: 100%;
+    height: auto; /* Let the container's height be determined by its content */
+    min-height: 15em;
+    position: relative; /* Ensure the container is positioned relative */
+    margin-bottom: 1em;
+  }
+
+  .leftCardImage {
+    position: relative; /* Change from absolute to relative */
+    width: 100%; /* Full width */
+    height: 10em; /* Height adjusts based on image aspect ratio */
+    border-radius: 30px 30px 0 0;
+    
+  }
+
+  .card {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .cardContent {
+    padding: 1em;
+  }
+}

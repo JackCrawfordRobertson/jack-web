@@ -1,0 +1,33 @@
+/* FunSection.module.css */
+
+.funSection {
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the text and line vertically */
+  overflow: hidden; /* Ensures the content doesn't overflow */
+}
+
+.funText {
+  font-size: 8em; /* Large font size */
+  font-weight: bold; /* Bold typography */
+  color: white; /* White text */
+  display: flex;
+  letter-spacing: -5px; /* Tighten up the letter spacing */
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  display: inline-block; /* Inline block to animate each letter */
+}
+
+.animatedLine {
+  width: 0%; /* Start at 0% width for animation */
+  height: 10px; /* Line height */
+  background-color: white; /* Line color */
+  margin-top: 20px; /* Space between the text and the line */
+  transition: width 1s ease-in-out; /* Smooth transition for the line */
+}

@@ -1,0 +1,129 @@
+/* Full width and height of the viewport */
+.fullScreenContainer {
+  width: 100vw;
+  height: 100svh; /* Use svh unit instead of vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure children like scrollPill can use absolute positioning */
+}
+
+/* Rest of your CSS remains unchanged unless adjustments are needed */
+
+/* Centered div inside the full-screen container */
+.centeredDiv {
+  text-align: left;
+  max-width: 80%;
+}
+
+/* Styling for the clickable text options */
+.clickableTexts {
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.clickableTexts span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 20px;
+  position: relative;
+  line-height: 1;
+  transition: color 0.3s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.clickableTexts span:hover {
+  color: #ecf0f1;
+}
+
+.clickableTexts .active {
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Underline animation */
+.clickableTexts span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.clickableTexts span.active::after {
+  transform: scaleX(1);
+}
+
+/* Quote container */
+.quoteContainer {
+  font-size: 3.5vw;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  line-height: 1.2;
+  padding: 0 0 45px 0;
+  margin-top: 10px;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.quoteTextAnimate {
+  font-weight: lighter;
+}
+
+/* Scroll Pill */
+.scrollPill {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Add this line to center horizontally */
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Arrow with Infinite Loop Animation */
+.arrowDown {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  animation: loopArrow 2s infinite ease-in-out;
+}
+
+/* Looping Animation */
+@keyframes loopArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .quoteContainer {
+    font-size: 6vw;
+    height: 300px !important;
+  }
+
+  .clickableTexts span {
+    font-size: 0.9rem;
+  }
+}
