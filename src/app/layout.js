@@ -21,3 +21,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export const config = {
+  unstable_scrollRestoration: false,
+};

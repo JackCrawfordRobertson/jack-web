@@ -9,6 +9,8 @@
   font-weight: bold;
   font-size: 5rem;
   margin-top: 1em;
+  line-height: .9; /* Add this for tighter line spacing on mobile */
+margin-bottom: .2em;
 }
 
 .bodyCopy {
@@ -25,12 +27,6 @@
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
-  .sliderContainer {
-    display: flex;
-    align-items: center;
-  }
-}
 
 .slider {
   width: 100px;
@@ -61,4 +57,17 @@
   min-width: 1000px;        /* Span the full width of the parent container */
   height: 100px;        /* Set the height to 1px */
   background-color: white;  /* White color */
+}
+
+@media (min-width: 768px) {
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 3rem; /* You can also adjust the font size for mobile if needed */
+    padding-bottom: 10px;
+  }
 }

@@ -1,0 +1,276 @@
+/* Main Container */
+.dataJournalismMain {
+    margin: 0 auto;
+    padding: 1em;
+    color: #3496d3;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust the sectionOne to take full screen height */
+/* Adjust the sectionOne to take full screen height and be adaptive for mobile */
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: calc(100svh - 5vh); /* Subtract the height of the marquee and use small viewport height for mobile */
+}
+
+@media (max-width: 768px) {
+    .sectionOne {
+        min-height: calc(100svh - 5vh); /* Use small viewport height on mobile */
+    }
+
+    .heroImage {
+        height: 60vh; 
+    }}
+
+/* Adjust the heroImage height for mobile as well */
+.heroImage {
+    width: 100%;
+    max-height: 75svh; /* Limit the image height to adapt to mobile browser's shrinking UI */
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+/* Back Button Container */
+.backButtonContainer {
+    align-self: flex-start; /* Align back button to the top */
+}
+
+/* Two-Column Grid */
+.twoColumnGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gridItem:nth-child(1) {
+    grid-column: span 2; /* First image spans both columns */
+}
+
+.gridItem:nth-child(even) {
+    margin-top: 30px; /* Offset every second item */
+}
+
+.gridImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gridImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .twoColumnGrid {
+        grid-template-columns: 1fr; /* Switch to single column on mobile */
+    }
+
+    .gridItem {
+        margin-top: 20px; /* Consistent spacing on mobile */
+    }
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3496d3;
+}
+
+/* Description Section */
+.descriptionContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Title column, wider text column */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.descriptionTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3496d3;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.descriptionText {
+    font-size: 1.2rem;
+    color: #3496d3;
+    line-height: 1.6;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .descriptionContainer {
+        grid-template-columns: 1fr;
+        margin: 40px;
+    }
+}
+
+/* Quote Section */
+.quotes {
+    max-width: 800px;
+    margin: 40px auto;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3496d3;
+}
+
+/* Call-to-Action Button */
+.ctaButton {
+    margin-top: 50px;
+    padding: 12px 30px;
+    background-color: white;
+    color: #3496d3;
+    font-size: 1.1rem;
+    border: 2px solid #3496d3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #3496d3;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Marquee Section */
+.marqueeContainer {
+    height: 5vh; 
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.marqueeText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 50px;
+}
+
+/* Back Button */
+.backButtonContainer {
+    position: relative;
+    background-color: #3496d3;
+    width: 50px;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 1em;
+}
+
+.backButtonContainer svg,
+.backButtonContainer span,
+.backButtonContainer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Info Container */
+/* Info Container */
+.infoContainer {
+    width: 100%;
+    background-color: #3496d3;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    color: white;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 1em;
+
+}
+
+.infoFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoField + .infoField {
+    margin-top: 10px;
+}
+
+.infoLabel {
+    font-weight: 700;
+    color: white;
+}
+
+.infoValue {
+    font-weight: 400;
+    color: white;
+}
+
+/* View Site Button */
+.viewSiteButton {
+    background-color: white;
+    color: #3496d3;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.viewSiteButton:hover {
+    background-color: white;
+    color: #3496d3;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .infoContainer {
+        flex-direction: column;
+        align-items: center; /* Center items on smaller screens */
+        padding: 20px 20px 20px 20px; /* Reduce padding on mobile */
+        text-align: left; /* Center align text */
+    }
+
+    .infoFields {
+        margin-bottom: 15px; /* Add spacing between fields and button */
+        width: 100%; /* Make the fields take full width */
+    }
+
+    .viewSiteButton {
+        width: 100%; /* Make the button full-width */
+        margin-top: 15px; /* Add margin above the button */
+        align-self: center; /* Center the button */
+    }
+}

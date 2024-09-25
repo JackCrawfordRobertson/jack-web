@@ -31,3 +31,34 @@
   margin-top: 20px; /* Space between the text and the line */
   transition: width 1s ease-in-out; /* Smooth transition for the line */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .funText {
+    font-size: 4em; /* Smaller font size for mobile */
+    letter-spacing: -2px; /* Adjust letter spacing for mobile */
+  }
+
+  .animatedLine {
+    margin-top: 10px; /* Reduce margin between text and line for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .funText {
+    font-size: 2em; /* Even smaller font size for very small screens */
+    letter-spacing: -1px; /* Tighter letter spacing */
+  }
+}
+
+.letter {
+  display: inline-block; /* Inline block to animate each letter */
+}
+
+.animatedLine {
+  width: 0%; /* Start at 0% width for animation */
+  height: 10px; /* Line height */
+  background-color: white; /* Line color */
+  margin-top: 20px; /* Space between the text and the line */
+  transition: width 1s ease-in-out; /* Smooth transition for the line */
+}

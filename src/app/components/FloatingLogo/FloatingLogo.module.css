@@ -2,8 +2,8 @@
 
 .logo {
     position: fixed; /* Fix the logo to the viewport */
-    bottom: 2vh; /* 2% from the bottom of the viewport */
-    right: 2vh; /* 2% from the right of the viewport */
+    bottom: 1vh; /* 2% from the bottom of the viewport */
+    right: 1vh; /* 2% from the right of the viewport */
     width: 5vw; /* Adjust as necessary */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000; /* Ensure the logo appears above other elements */

@@ -1,4 +1,5 @@
 import Image from "next/image"; // Import Next.js Image component
+import Link from "next/link";
 import styles from "./page.module.css"; // Your custom CSS file
 
 // Import your components
@@ -37,13 +38,15 @@ export default function Home() {
                         }}
                     />
 
-                    <LeftCard
-                        image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
-                        title="Data Journalism"
-                        description="Working with ICE to craft new ways of data storytelling."
-                        quote1="This is the first pull quote."
-                        quote2="This is the second pull quote."
-                    />
+                    <Link href="/project/datajournalism" passHref>
+                        <LeftCard
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
+                            title="Data Journalism"
+                            description="Working with ICE to craft new ways of data storytelling."
+                            quote1="This is the first pull quote."
+                            quote2="This is the second pull quote."
+                        />
+                    </Link>
 
                     <RightCard
                         image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
