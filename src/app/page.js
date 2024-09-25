@@ -112,7 +112,6 @@ export default function Home() {
                         }}
                     />
 
-                    <EmissionCalculator />
                 </div>
             </main>
 

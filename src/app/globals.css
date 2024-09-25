@@ -85,6 +85,10 @@ html::-webkit-scrollbar {
   }
 }
 
+.className {
+margin: 0;
+padding: 0px;}
+
 /* Utility Classes */
 .container {
   max-width: var(--max-width);

@@ -3,7 +3,7 @@
   justify-content: space-between; /* Evenly space the cards horizontally */
   max-width: 100%; /* Allow full-width container */
   margin: 0 auto; /* Center the container */
-  gap: 2rem; /* Add space between the cards */
+  gap: 1em; /* Add space between the cards */
   margin-bottom: 1em;
 }
 
@@ -71,7 +71,7 @@
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 1em;
   margin-bottom: 1em;
   flex-wrap: wrap; /* Ensure cards wrap when there's no more space */
 }

@@ -1,16 +1,33 @@
 "use client"; // Mark the whole component as client-side
 
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useRouter} from "next/navigation"; // Import for navigation
 import Image from "next/image";
 import Marquee from "react-fast-marquee"; // Import the library
 import {IconButton} from "@mui/material"; // Material UI button
 import ArrowBackIcon from "@mui/icons-material/ArrowBack"; // Material UI back icon
 import styles from "./ProjectPage.module.css"; // Adjust path for your CSS
-import FloatingLogo from "../../components/FloatingLogo/FloatingLogo";
+import {motion, AnimatePresence} from "framer-motion"; // For animations
 
 const DataJournalism = () => {
     const router = useRouter();
+    const [isDesktop, setIsDesktop] = useState(true);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsDesktop(window.innerWidth > 768); // Adjust 768px as needed
+      };
+  
+      // Set initial value
+      handleResize();
+  
+      // Add event listener for window resize
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup event listener
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
     useEffect(() => {
         // Scroll to top on component mount
@@ -35,7 +52,6 @@ const DataJournalism = () => {
             </div>
 
             <main className={styles.dataJournalismMain}>
-
                 {/* Hero Image */}
                 <div className={styles.sectionOne}>
                     <div className={styles.backButtonContainer}>
@@ -52,34 +68,46 @@ const DataJournalism = () => {
                     />
 
                     {/* Info Container */}
-                <div className={styles.infoContainer}>
-                    <div className={styles.infoFields}>
-                        <div className={styles.infoField}>
-                            <span className={styles.infoLabel}>
-                                <strong>Year:</strong>
-                            </span>
-                            <span className={styles.infoValue}> 2024</span>
+                    <div className={styles.infoContainer}>
+                        <div className={styles.infoFields}>
+                            <div className={styles.infoField}>
+                                <span className={styles.infoLabel}>
+                                    <strong>Year:</strong>
+                                </span>
+                                <span className={styles.infoValue}> 2024</span>
+                            </div>
+                            <div className={styles.infoField}>
+                                <span className={styles.infoLabel}>
+                                    <strong>Client:</strong>
+                                </span>
+                                <span className={styles.infoValue}> ICE Corporate Events</span>
+                            </div>
                         </div>
-                        <div className={styles.infoField}>
-                            <span className={styles.infoLabel}>
-                                <strong>Client:</strong>
-                            </span>
-                            <span className={styles.infoValue}> ICE Corporate Events</span>
-                        </div>
-                    </div>
-                    <IconButton
-                        href="https://your-live-site-link.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.viewSiteButton}
-                        aria-label="View Live Site"
-                    >
-                        View Live Site
-                    </IconButton>
-                </div>
-                </div>
+                        {/* Down arrow for desktop */}
 
-                
+                        {/* Unclickable Scroll Pill */}
+                        {isDesktop && (
+            <motion.div
+              className={styles.scrollPill}
+              initial={{ opacity: 0, y: -20 }}  // Start with invisible and above position
+              animate={{ opacity: 1, y: 0 }}   // Animate to visible and normal position
+              transition={{ duration: 1.5, ease: "easeOut" }}  // Smooth transition
+            >
+              <span className={styles.arrowDown}>↓</span>
+            </motion.div>
+          )}
+
+                        <IconButton
+                            href="https://your-live-site-link.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.viewSiteButton}
+                            aria-label="View Live Site"
+                        >
+                            View Live Site
+                        </IconButton>
+                    </div>
+                </div>
 
                 {/* Project Description */}
                 <div className={styles.descriptionContainer}>
@@ -124,6 +152,16 @@ const DataJournalism = () => {
                             className={styles.gridImage}
                         />
                     </div>
+                    <div className={styles.gridItem}>
+                        <Image
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
+                            alt="Image 4"
+                            width={600}
+                            height={400}
+                            className={styles.gridImage}
+                        />
+                    </div>
+
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"

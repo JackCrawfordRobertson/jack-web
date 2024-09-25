@@ -1,11 +1,30 @@
+.footer {
+  max-width: 80%; /* Default for larger screens */
+  margin: 0 auto; /* Center the footer */
+  padding: 20px;
+  background-color: white; /* Inverted from blue to white */
+  color: #428bca; /* Inverted from white to blue */
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    max-width: 100%; /* Full width on mobile screens */
+    padding: 20px;
+  }
+}
+
 .carbonButton {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #428bca;
+  background-color: white; /* Inverted from blue to white */
   padding: 3vh;
   border-radius: 8px;
-  color: white;
+  color: #428bca; /* Inverted from white to blue */
 }
 
 .carbonText {
@@ -18,7 +37,7 @@
 
 .carbonText a {
   text-decoration: none;
-  color: white;
+  color: #428bca; /* Inverted from white to blue */
 }
 
 .websiteCarbon {
@@ -34,4 +53,38 @@
 
 .carbonRating p {
   margin: 0;
+  color: #428bca; /* Ensure text colour matches the inverted scheme */
+}
+
+/* New section for footer with contact button and icons */
+.icons {
+  display: flex; /* Ensure the contact button and icons are on the same line */
+  align-items: center;
+  gap: 20px; /* Space between icons and button */
+  margin-top: 20px;
+}
+
+.contactButton {
+  background-color: #3496d3; /* Inverted from white to blue */
+  color: white; /* Inverted from blue to white */
+  padding: 10px 20px;
+  width: 150px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contactButton:hover {
+  background-color: #428bca; /* Inverted from white hover to blue hover */
+  color: white;
+}
+
+.icon {
+  font-size: 2rem; /* Icon size */
+  color: #3496d3; /* Inverted from white to blue */
+}
+
+.icon:hover {
+  color: #3496d3; /* Keep hover consistent */
 }
