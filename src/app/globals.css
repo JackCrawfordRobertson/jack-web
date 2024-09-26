@@ -72,6 +72,8 @@ a {
 /* No Scrollbar */
 html, body {
   scrollbar-width: none; /* For Firefox */
+  scroll-behavior: smooth;
+
 }
 
 html::-webkit-scrollbar {

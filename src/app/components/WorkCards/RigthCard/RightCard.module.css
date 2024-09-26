@@ -39,6 +39,8 @@
 .cardContent {
   padding-top: 2em;
   padding-left: 2em;
+  padding-right: 2em;
+
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack children vertically */
   justify-content: flex-start; /* Align children to the top */

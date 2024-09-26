@@ -2,6 +2,9 @@ import { Inter } from 'next/font/google';
 import "./globals.css";
 import SmoothScrollProvider from "./components/SmoothScrollProvider"; // Import the smooth scroll provider
 import EmissionCalculator from './components/Emission/EmissionCalculator'; // Import the footer component
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {/* Apply smooth scrolling globally */}
         <SmoothScrollProvider>
+          {/* Scroll to top on route change */}
+          <ScrollToTop />
+          
           {/* Your page content */}
           {children}
 
@@ -26,7 +32,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-export const config = {
-  unstable_scrollRestoration: false,
-};

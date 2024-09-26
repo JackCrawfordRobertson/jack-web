@@ -11,14 +11,12 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
-import { useMediaQuery } from '@mui/material';
+import {useMediaQuery} from "@mui/material";
 
-
-const DataJournalism = () => {
+const MiddelEast = () => {
     const router = useRouter();
     const [isDesktop, setIsDesktop] = useState(true);
-    const isMobile = useMediaQuery('(max-width:768px)');
-
+    const isMobile = useMediaQuery("(max-width:768px)");
 
     useEffect(() => {
         const handleResize = () => {
@@ -52,9 +50,9 @@ const DataJournalism = () => {
             <div className={styles.marqueeContainer}>
                 <Marquee gradient={false} speed={50}>
                     <span className={styles.marqueeText}>
-                        Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data
-                        Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism
-                        &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism
+                        Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East
+                        &nbsp;&nbsp;&nbsp;&nbsp; Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East
+                        &nbsp;&nbsp;&nbsp;&nbsp; Middle East
                     </span>
                 </Marquee>
             </div>
@@ -82,13 +80,16 @@ const DataJournalism = () => {
                                 <span className={styles.infoLabel}>
                                     <strong>Year:</strong>
                                 </span>
-                                <span className={styles.infoValue}> 2024</span>
+                                <span className={styles.infoValue}> 2022</span>
                             </div>
                             <div className={styles.infoField}>
                                 <span className={styles.infoLabel}>
-                                    <strong>Client:</strong>
+                                    <strong>Location:</strong>
                                 </span>
-                                <span className={styles.infoValue}> ICE Corporate Events</span>
+                                <span className={styles.infoValue}>
+                                    {" "}
+                                    GCD, Central Saint Martins
+                                </span>
                             </div>
                         </div>
                         {/* Down arrow for desktop */}
@@ -105,15 +106,22 @@ const DataJournalism = () => {
                             </motion.div>
                         )}
 
-                        <IconButton
-                            href="https://your-live-site-link.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.viewSiteButton}
-                            aria-label="View Live Site"
-                        >
-                            View Live Site
-                        </IconButton>
+                        {/* Conditional Button with Placeholder */}
+                        {false ? ( // Set this to `false` when you want to hide the button
+                            <IconButton
+                                href="https://your-live-site-link.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.viewSiteButton}
+                                aria-label="View Live Site"
+                            >
+                                View Live Site
+                            </IconButton>
+                        ) : (
+                            <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
+                                {/* Placeholder for IconButton */}
+                            </div>
+                        )}
                     </div>
                 </div>
 
@@ -124,9 +132,7 @@ const DataJournalism = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                            This project focused on exploring innovative ways of data storytelling in the corporate
-                            events sector. By integrating various data sources and using a clear narrative, we delivered
-                            insights that reached a broader audience.
+                        In 2021, I observed a noticeable decline in Western media coverage of conflicts in the Middle East. This prompted me to pursue my dissertation, “A New Way of Seeing: Visualizing the Middle East Wars.” In this work, I examined how information design can deepen our understanding of the human and political scale of impact, destruction and displacement in the region. As part of my research, I conducted a series of workshops where participants filled over 200 meters of scrolls with data. Each dot on the scrolls represented a civilan life lost in the Middle East conflicts, while participants also shared their knowledge and perspectives, illustrating the scale and complexity of the wars.
                         </p>
                     </div>
                 </div>
@@ -178,25 +184,30 @@ const DataJournalism = () => {
                             height={400}
                             className={styles.gridImage}
                         />
-                     
                     </div>
-                    
                 </div>
 
                 <Divider
-            sx={{
-                backgroundColor: "#3496d3", // Divider color
-                height: "2px", // Set height
-                width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
-                marginTop: "1em", // Margin top
-                marginBottom: "1em", // Margin bottom
-            }}
-        />
+                    sx={{
+                        backgroundColor: "#3496d3", // Divider color
+                        height: "2px", // Set height
+                        width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
+                        marginTop: "1em", // Margin top
+                        marginBottom: "1em", // Margin bottom
+                    }}
+                />
 
                 {/* Project Quotes */}
                 <QuoteWithImage
-                    quote="'This project redefined how we approached storytelling through data.'"
-                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png" // Replace with your image URL
+                    quote={
+                        <>
+                            'Jack’s work demonstrates a clear, in-depth analysis of his creative and ethical position in
+                            relation to information design, especially concerning destruction and displacement in the
+                            Middle East.
+                            <b> - Kira Salter, Course Leader'</b>
+                        </>
+                    }
+                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727283850/Central_Saint_Martins_College_of_Arts_and_Design_King_27s_Cross_bdf4rf.jpg" // Replace with your image URL
                     altText="Data storytelling illustration"
                 />
 
@@ -229,4 +240,4 @@ const DataJournalism = () => {
     );
 };
 
-export default DataJournalism;
+export default MiddelEast;

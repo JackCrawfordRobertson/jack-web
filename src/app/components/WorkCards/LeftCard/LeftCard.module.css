@@ -10,7 +10,7 @@
 
 .leftCardImageContainer {
   position: relative;  /* Required for Next.js Image layout="fill" */
-  width: 45%;          /* Allow the container to be 30% of the parent's width */
+  min-width: 45%;          /* Allow the container to be 30% of the parent's width */
   height: 100%;        /* Ensure it takes the full height */
 }
 
@@ -40,10 +40,12 @@
 .cardContent {
   padding-top: 2em;
   padding-left: 2em;
+  padding-right: 2em;
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack children vertically */
   justify-content: flex-start; /* Align children to the top */
   height: 100%; /* Take the full height of the card */
+  
 }
 
 .cardTitle {
@@ -53,8 +55,9 @@
 }
 
 .cardDescription {
-  font-size: 1rem; /* Adjust description size */
+  font-size: 1.3rem; /* Adjust description size */
   color: #3496d3; /* Optional text colour */
+
 }
 
 .pullQuotes {

@@ -20,8 +20,7 @@ const ba5Image = "/images/Projects/BA/image1.png";
 export default function Home() {
     return (
         <>
-            {/* Render the LoadingScreen at the top */}
-            {/* <LoadingScreen /> */}
+            <LoadingScreen />
 
             {/* Main page content */}
             <main className={styles.main}>
@@ -38,7 +37,7 @@ export default function Home() {
                         }}
                     />
 
-                    <Link href="/project/datajournalism" passHref>
+                    <Link href="/project/DataJournalism" passHref>
                         <LeftCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
                             title="Data Journalism"
@@ -82,6 +81,16 @@ export default function Home() {
                         quote2="This is the second pull quote."
                     />
 
+                    <Link href="/project/MiddelEast" passHref>
+                        <LeftCard
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
+                            title="Middle East"
+                            description="In 2021, I explored how information design can reveal the human and political impact of Middle East conflicts through data-driven visualisation and collaborative workshops."
+                            quote1="Infomation Design"
+                            quote2="Workshoping"
+                        />
+                    </Link>
+
                     <FunSection />
                     <Divider
                         sx={{
@@ -111,7 +120,6 @@ export default function Home() {
                             marginBottom: "20px",
                         }}
                     />
-
                 </div>
             </main>
 

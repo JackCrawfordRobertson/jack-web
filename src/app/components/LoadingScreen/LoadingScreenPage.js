@@ -1,20 +1,20 @@
+// components/LoadingScreen.js
 'use client'; // Ensure this is a client-side component
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import styles from './LoadingScreen.module.css'; // CSS Module for styling
-
+import Image from 'next/image';
 import blueLogo from '/public/Blue_Logo.svg'; // Path to your logo
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Hide the loading screen after 3 seconds
+  // Hide the loading screen after 0.9 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 900); // 900ms for the fade-out duration
 
     return () => clearTimeout(timer); // Clean up the timer on unmount
   }, []);
@@ -25,20 +25,15 @@ const LoadingScreen = () => {
         <motion.div
           className={styles.loadingScreen}
           initial={{ opacity: 1 }} // Loading screen starts fully visible
-          exit={{ opacity: 0 }} // Fade out the loading screen
-          transition={{ duration: 1 }} // Fade-out duration
+          exit={{ opacity: 0 }}    // Fade out the loading screen
+          transition={{ duration: 0.9 }} // Fade-out duration set to 0.9 seconds
         >
           <motion.div
             className={styles.logoContainer}
-            initial={{ opacity: 0, scale: 0.3, rotate: 0 }} // Logo starts hidden and small
-            animate={{ opacity: 1, scale: 1, rotate: 360 }} // Logo becomes visible, spins, and grows
-            transition={{
-              type: 'spring', // Use spring physics
-              stiffness: 80,  // Lower stiffness for a softer bounce
-              damping: 20,    // Increase damping to reduce oscillation
-              mass: 1,        // A heavier mass will slow down the motion
-              duration: 2.5,  // Slow down the entire animation
-            }}
+            initial={{ opacity: 0, scale: 0.8, rotate: 0 }} // Logo starts slightly smaller and invisible
+            animate={{ opacity: 1, scale: 1.1, rotate: 0 }} // Logo gently scales up with a slight rotation
+            exit={{ opacity: 0, scale: 0.8, rotate: 0 }} // Logo shrinks back on exit
+            transition={{ duration: 0.9, ease: 'easeInOut' }} // Matches the overall screen transition
           >
             <Image
               src={blueLogo}
