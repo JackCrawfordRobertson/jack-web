@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -7,14 +6,9 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'example.com',
-        pathname: '/**',
-      },
     ],
-    deviceSizes: [320, 420, 768, 1024, 1200], // Sizes to be used for responsive images
-    imageSizes: [16, 32, 48, 64, 96], // Sizes to be used for fixed-size images
+    deviceSizes: [320, 420, 768, 1024, 1200, 1920, 2560, 3840, 6000], // Added larger sizes
+    imageSizes: [16, 32, 48, 64, 96],
   },
 };
 

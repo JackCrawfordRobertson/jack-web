@@ -39,9 +39,9 @@ const RightCard = ({ image, title, description, quote1, quote2 }) => {
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
-          className={styles.cardImage}
+          fill
+          style={{ objectFit: "cover" }}
+                    className={styles.cardImage}
         />
       </motion.div>
     </motion.div>

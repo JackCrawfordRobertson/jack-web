@@ -66,9 +66,9 @@ const MiddelEast = () => {
                         </IconButton>
                     </div>
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107948/image6_oxggss.png"
-                        alt="Hero Image"
-                        width={1920} // Adjust based on your image
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449668/Main_Landing_woe1yb.png"
+                        alt="Hero Image for my Middle East project"
+                        width={1520} // Adjust based on your image
                         height={1080} // Adjust based on your image
                         className={styles.heroImage}
                     />
@@ -142,7 +142,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image2_anhedj.png"
-                            alt="Image 1"
+                            alt="First Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -151,7 +151,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image3_w2kcfm.png"
-                            alt="Image 2"
+                            alt="Second Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -160,7 +160,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png"
-                            alt="Image 3"
+                            alt= "Third Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -169,7 +169,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Image 4"
+                            alt="Fourth Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -179,7 +179,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Image 4"
+                            alt="Fifth Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -208,7 +208,7 @@ const MiddelEast = () => {
                         </>
                     }
                     imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727283850/Central_Saint_Martins_College_of_Arts_and_Design_King_27s_Cross_bdf4rf.jpg" // Replace with your image URL
-                    altText="Data storytelling illustration"
+                    altText="Central Saint Martins College of Arts and Design King's Cross"
                 />
 
                 {/* Call to Action */}

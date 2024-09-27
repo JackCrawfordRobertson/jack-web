@@ -12,10 +12,7 @@ import Play from "./components/WorkCards/Play/Play";
 import FunSection from "./components/FunSection/FunSection";
 import FloatingLogo from "./components/FloatingLogo/FloatingLogo";
 import Divider from "@mui/material/Divider";
-import CallToAction from "./components/CallToAction/CallToAction"; // Import the CTA component
-
-// Images should be in the 'public' directory in Next.js
-const ba5Image = "/images/Projects/BA/image1.png";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 export default function Home() {
     return (
@@ -39,7 +36,7 @@ export default function Home() {
 
                     <Link href="/project/DataJournalism" passHref>
                         <LeftCard
-                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449663/Main-4_tv0vto.png" // Optimized Cloudinary URL
                             title="Data Journalism"
                             description="Working with ICE to craft new ways of data storytelling."
                             quote1="This is the first pull quote."
@@ -47,13 +44,15 @@ export default function Home() {
                         />
                     </Link>
 
-                    <RightCard
-                        image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
-                        title="Data Journalism"
-                        description="Working with ICE to craft new ways of data storytelling in the corporate events world, highlighting and delivering findings to new audiences."
-                        quote1="This is the first pull quote."
-                        quote2="This is the second pull quote."
-                    />
+                    <Link href="/project/WrittenWork" passHref>
+                        <RightCard
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449670/Main_lplvgj.png"
+                            title="Writen Work"
+                            description="Explore my weekly articles and design narratives where I share insights on climate, water, sustainability, and related systems."
+                            quote1="Narrative"
+                            quote2="Data investigation"
+                        />
+                    </Link>
 
                     <div className={styles.title}>What I've done.</div>
 
@@ -65,17 +64,19 @@ export default function Home() {
                         }}
                     />
 
-                    <LeftCard
-                        image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
-                        title="Data Journalism"
-                        description="Working with ICE to craft new ways of data storytelling."
-                        quote1="This is the first pull quote."
-                        quote2="This is the second pull quote."
-                    />
+                    <Link href="/project/Maya" passHref>
+                        <LeftCard
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449666/MainMaya_loyeb3.png"
+                            title="Maya"
+                            description="Working with ICE to craft new ways of data storytelling."
+                            quote1="This is the first pull quote."
+                            quote2="This is the second pull quote."
+                        />
+                    </Link>
 
                     <RightCard
-                        image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
-                        title="Data Journalism"
+                        image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449658/Main-3_dpbvls.png"
+                        title="Advertising"
                         description="Working with ICE to craft new ways of data storytelling in the corporate events world, highlighting and delivering findings to new audiences."
                         quote1="This is the first pull quote."
                         quote2="This is the second pull quote."
@@ -83,7 +84,7 @@ export default function Home() {
 
                     <Link href="/project/MiddelEast" passHref>
                         <LeftCard
-                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449659/wholebook_oj5bln.jpg"
                             title="Middle East"
                             description="In 2021, I explored how information design can reveal the human and political impact of Middle East conflicts through data-driven visualisation and collaborative workshops."
                             quote1="Infomation Design"

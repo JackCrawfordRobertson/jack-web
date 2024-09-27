@@ -55,7 +55,7 @@ const FunSection = () => {
         }}
         transition={{ duration: 0.6, ease: [0.25, 0.8, 0.25, 1] }} // Smooth easing for the whole text block
       >
-        {'What I Do For Fun!'.split('').map((letter, index) => (
+        {'What I Make For Fun!'.split('').map((letter, index) => (
           <motion.span
             key={index}
             custom={index}
