@@ -42,7 +42,7 @@ export default function Home() {
                     <Link href="/posts/WrittenWork" passHref>
                         <RightCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449670/Main_lplvgj.png"
-                            title="Writen Work"
+                            title="Written Work"
                             description="Discover my weekly articles and design stories, where I share fresh insights on climate, water, sustainability, and beyond."
                             quote1="Narrative"
                             quote2="Data investigation"

@@ -52,7 +52,7 @@ const MiddelEast = () => {
             <div className={styles.marqueeContainer}>
                 <Marquee gradient={false} speed={50}>
                     <span className={styles.marqueeText}>
-                        Writen Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work
+                        Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work
                         &nbsp;&nbsp;&nbsp;&nbsp; Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work
                         &nbsp;&nbsp;&nbsp;&nbsp; Written Work
                     </span>
@@ -69,7 +69,7 @@ const MiddelEast = () => {
                     </div>
                     <Image
                         src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449671/MainLanding_jw3v6e.png"
-                        alt="Hero Image for My Writen Work"
+                        alt="Hero Image for My Written Work"
                         width={1920} // Adjust based on your image
                         height={1080} // Adjust based on your image
                         className={styles.heroImage}
@@ -144,7 +144,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449662/Jack1_min_xqwgom.png"
-                            alt="First Grid Image of my Writen Work portfolio"
+                            alt="First Grid Image of my Written Work portfolio"
                             width={1920}
                             height={1080}
                             className={styles.gridImage}
@@ -153,7 +153,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449665/Jack3_k97uxi.png"
-                            alt="Second Grid Image of my Writen Work portfolio"
+                            alt="Second Grid Image of my Written Work portfolio"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -162,7 +162,7 @@ const MiddelEast = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449667/Jack4_oeys5m.png"
-                            alt= "Third Grid Image of my Writen Work portfolio"
+                            alt= "Third Grid Image of my Written Work portfolio"
                             width={600}
                             height={400}
                             className={styles.gridImage}
