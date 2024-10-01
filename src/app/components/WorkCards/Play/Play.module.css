@@ -83,6 +83,17 @@
     margin-bottom: 1rem; /* Add some space between the stacked cards */
   }
 
+  .workCardTitle {
+    font-size: 3rem; /* Adjust title size */
+    margin-bottom: 0.5rem;
+  line-height: .9;
+  }
+
+  .workCardDescription {
+    font-size: 1.1rem; /* Adjust quote size */
+  }
+
+
   .workCardsContainer {
     flex-direction: column; /* Stack the cards vertically */
     gap: 1rem; /* Adjust gap between cards for mobile */

@@ -4,6 +4,8 @@ import SmoothScrollProvider from "./components/SmoothScrollProvider";
 import EmissionCalculator from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from './components/LoadingScreen/LoadingScreen'; // Import the LoadingScreen
+import OrientationLock from './components/OrientationLock'; // Import the OrientationLock component
+ 
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -80,6 +82,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <LoadingScreen /> {/* Load the loading screen */}
+      <OrientationLock /> {/* Render the orientation lock */}
+
         {/* Apply smooth scrolling globally */}
         <SmoothScrollProvider>
           {/* Scroll to top on route change */}

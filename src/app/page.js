@@ -10,7 +10,6 @@ import FunSection from "./components/FunSection/FunSection";
 import FloatingLogo from "./components/FloatingLogo/FloatingLogo";
 import Divider from "@mui/material/Divider";
 import CallToAction from "./components/CallToAction/CallToAction";
-import OrientationLock from './components/OrientationLock';
 
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
             {/* Main page content */}
             <main className={styles.main}>
                 <TopScreenQuote />
-                <OrientationLock />
                 <div className={styles.homeTopContainer}>
                     <div className={styles.title}>What I'm doing.</div>
 
