@@ -103,3 +103,20 @@ padding: 0px;}
   border-radius: var(--border-radius);
   padding: 1em;
 }
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  body {
+    display: none; /* Hide the content in landscape orientation on mobile */
+  }
+
+  .orientation-warning {
+    display: flex; /* Show a warning message */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #3496d3;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #f6f6f6; /* Light background for warning */
+  }
+}

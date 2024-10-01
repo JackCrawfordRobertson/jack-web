@@ -11,6 +11,7 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
+import { Button } from "@mui/material"; // Import Button from Material UI
 import {useMediaQuery} from "@mui/material";
 
 const Maya = () => {
@@ -109,21 +110,29 @@ const Maya = () => {
                         )}
 
                         {/* Conditional Button with Placeholder */}
-                        {true ? ( // Set this to `false` when you want to hide the button
-                            <IconButton
-                                href="https://maya.jack-robertson.co.uk/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.viewSiteButton}
-                                aria-label="View Live Site"
-                            >
-                                View Live Site
-                            </IconButton>
+                       {/* Conditional Button with Placeholder */}
+                       {true ? ( // Set this to `false` when you want to hide the button
+                              <Button
+                              variant="contained"
+                              href="https://maya.jack-robertson.co.uk/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.viewSiteButton}
+                              style={{
+                                marginTop: "20px",
+                                backgroundColor: "#fff", // Customize the button color
+                                color: "#3496d3", // Text color
+                                textTransform: "none", // Prevent uppercase transformation
+                            }}
+                          >
+                              View Live Site
+                          </Button>
                         ) : (
                             <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
                                 {/* Placeholder for IconButton */}
                             </div>
                         )}
+                    
                     </div>
                 </div>
 
@@ -196,7 +205,7 @@ const Maya = () => {
                 />
 
                 {/* Call to Action */}
-                <IconButton
+                <Button
                     onClick={handleBackClick}
                     aria-label="back to home"
                     sx={{
@@ -219,7 +228,7 @@ const Maya = () => {
                     }}
                 >
                     View More Projects
-                </IconButton>
+                </Button>
             </main>
         </>
     );

@@ -11,6 +11,7 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
+import { Button } from "@mui/material"; // Import Button from Material UI
 import {useMediaQuery} from "@mui/material";
 
 const DataJournalism = () => {
@@ -104,15 +105,22 @@ const DataJournalism = () => {
                             </motion.div>
                         )}
 
-                        <IconButton
-                            href="https://research.ice-hub.biz/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.viewSiteButton}
-                            aria-label="View Live Site"
-                        >
-                            View Live Site
-                        </IconButton>
+<Button
+    variant="contained" // You can also use 'outlined' or 'text' based on your design
+    href="https://research.ice-hub.biz/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.viewSiteButton} // Custom styles can still be applied
+    aria-label="View Live Site"
+    style={{
+        marginTop: "20px",
+        backgroundColor: "#fff", // Customize the button color
+        color: "#3496d3", // Text color
+        textTransform: "none", // Prevent uppercase transformation
+    }}
+>
+    View Live Site
+</Button>
                     </div>
                 </div>
 
@@ -187,7 +195,7 @@ const DataJournalism = () => {
                 />
 
                 {/* Call to Action */}
-                <IconButton
+                <Button
                     onClick={handleBackClick}
                     aria-label="back to home"
                     sx={{
@@ -195,7 +203,6 @@ const DataJournalism = () => {
                         borderRadius: "30px",
                         color: "#fff",
                         marginTop: "4em",
-
                         padding: "10px 20px",
                         fontSize: "1.1rem",
                         "&:hover": {
@@ -211,7 +218,7 @@ const DataJournalism = () => {
                     }}
                 >
                     View More Projects
-                </IconButton>
+                </Button>
             </main>
         </>
     );

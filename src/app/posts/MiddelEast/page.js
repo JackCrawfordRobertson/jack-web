@@ -11,6 +11,8 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
+import Button from "@mui/material/Button";
+
 import {useMediaQuery} from "@mui/material";
 
 const MiddelEast = () => {
@@ -216,17 +218,16 @@ const MiddelEast = () => {
                 />
 
                 {/* Call to Action */}
-                <IconButton
+                <Button
                     onClick={handleBackClick}
                     aria-label="back to home"
                     sx={{
                         backgroundColor: "#3496d3",
                         borderRadius: "30px",
                         color: "#fff",
+                        marginTop: "4em",
                         padding: "10px 20px",
                         fontSize: "1.1rem",
-                        marginTop: "4em",
-
                         "&:hover": {
                             backgroundColor: "#2678a6",
                             boxShadow: "0 6px 15px rgba(0, 0, 0, 0.2)",
@@ -240,7 +241,7 @@ const MiddelEast = () => {
                     }}
                 >
                     View More Projects
-                </IconButton>
+                </Button>
             </main>
         </>
     );

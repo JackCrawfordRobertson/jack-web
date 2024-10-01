@@ -11,6 +11,7 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
+import { Button } from "@mui/material"; // Import the Button component
 import {useMediaQuery} from "@mui/material";
 
 const Advertising = () => {
@@ -108,15 +109,21 @@ const Advertising = () => {
 
                         {/* Conditional Button with Placeholder */}
                         {false ? ( // Set this to `false` when you want to hide the button
-                            <IconButton
-                                href="https://written.jack-robertson.co.uk/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.viewSiteButton}
-                                aria-label="View Live Site"
-                            >
-                                View Live Site
-                            </IconButton>
+                              <Button
+                              variant="contained"
+                              href="https://written.jack-robertson.co.uk/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.viewSiteButton}
+                              style={{
+                                marginTop: "20px",
+                                backgroundColor: "#fff", // Customize the button color
+                                color: "#3496d3", // Text color
+                                textTransform: "none", // Prevent uppercase transformation
+                            }}
+                          >
+                              View Live Site
+                          </Button>
                         ) : (
                             <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
                                 {/* Placeholder for IconButton */}
@@ -193,15 +200,15 @@ const Advertising = () => {
                 />
 
                 {/* Call to Action */}
-                <IconButton
+                 <Button
                     onClick={handleBackClick}
                     aria-label="back to home"
                     sx={{
                         backgroundColor: "#3496d3",
                         borderRadius: "30px",
                         color: "#fff",
-                        padding: "10px 20px",
                         marginTop: "4em",
+                        padding: "10px 20px",
                         fontSize: "1.1rem",
                         "&:hover": {
                             backgroundColor: "#2678a6",
@@ -216,7 +223,7 @@ const Advertising = () => {
                     }}
                 >
                     View More Projects
-                </IconButton>
+                </Button>
             </main>
         </>
     );

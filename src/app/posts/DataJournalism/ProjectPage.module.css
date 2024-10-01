@@ -47,16 +47,7 @@
     align-self: flex-start; /* Align back button to the top */
 }
 
-/* Two-Column Grid */
-.twoColumnGrid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+ 
 
 .gridItem:nth-child(1) {
     grid-column: span 2; /* First image spans both columns */
@@ -80,15 +71,27 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+ /* Two-Column Grid */
+.twoColumnGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Default for larger screens */
+    gap: 20px; /* Space between items */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .twoColumnGrid {
-        grid-template-columns: 1fr; /* Switch to single column on mobile */
+        grid-template-columns: 1fr; /* Change to single column on mobile */
+        gap: 10px; /* Adjust gap for mobile if needed */
     }
 
     .gridItem {
-        margin-top: 0px; /* Consistent spacing on mobile */
-        padding: 0px;
+        width: 100%; /* Ensure items take full width */
+        margin-bottom: 10px; /* Optional: add space below each item */
     }
 }
 

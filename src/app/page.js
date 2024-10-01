@@ -2,7 +2,6 @@ import Link from "next/link";
 import styles from "./page.module.css"; // Your custom CSS file
 
 // Import your components
-import ShortLoadingScreen from './components/LoadingScreen/LoadingScreenPage';
 import TopScreenQuote from "./components/FullScreenComponent/TopScreenQuote";
 import LeftCard from "./components/WorkCards/LeftCard/LeftCard";
 import RightCard from "./components/WorkCards/RigthCard/RightCard";
@@ -11,16 +10,16 @@ import FunSection from "./components/FunSection/FunSection";
 import FloatingLogo from "./components/FloatingLogo/FloatingLogo";
 import Divider from "@mui/material/Divider";
 import CallToAction from "./components/CallToAction/CallToAction";
+import OrientationLock from './components/OrientationLock';
+
 
 export default function Home() {
     return (
         <>
-            {/* <LoadingScreen /> */}
-
             {/* Main page content */}
             <main className={styles.main}>
                 <TopScreenQuote />
-
+                <OrientationLock />
                 <div className={styles.homeTopContainer}>
                     <div className={styles.title}>What I'm doing.</div>
 

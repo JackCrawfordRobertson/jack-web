@@ -102,6 +102,10 @@
     margin-bottom: 1em;
   }
 
+  .cardTitle {
+    margin-bottom: .2em;
+   }
+
   .cardImage {
     position: relative;
     width: 100%;
