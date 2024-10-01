@@ -6,7 +6,7 @@ import { GitHub, LinkedIn } from "@mui/icons-material"; // Material UI icons
 import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
 import styles from "./badge-styles.module.css"; // Using CSS modules for styling
 
-function EmissionCalculator() {
+function Footer() {
     const [copied, setCopied] = useState(false); // State to show copied feedback
 
     // Function to copy email to clipboard
@@ -100,4 +100,4 @@ function EmissionCalculator() {
     );
 }
 
-export default EmissionCalculator;
+export default Footer;

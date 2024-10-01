@@ -50,9 +50,9 @@ const MiddelEast = () => {
             <div className={styles.marqueeContainer}>
                 <Marquee gradient={false} speed={50}>
                     <span className={styles.marqueeText}>
-                        Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East
-                        &nbsp;&nbsp;&nbsp;&nbsp; Middle East &nbsp;&nbsp;&nbsp;&nbsp; Middle East
-                        &nbsp;&nbsp;&nbsp;&nbsp; Middle East
+                        Writen Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work
+                        &nbsp;&nbsp;&nbsp;&nbsp; Written Work &nbsp;&nbsp;&nbsp;&nbsp; Written Work
+                        &nbsp;&nbsp;&nbsp;&nbsp; Written Work
                     </span>
                 </Marquee>
             </div>
@@ -66,8 +66,8 @@ const MiddelEast = () => {
                         </IconButton>
                     </div>
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449660/Main_LandingMaya_vvzthe.png"
-                        alt="Hero Image for Maya"
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449671/MainLanding_jw3v6e.png"
+                        alt="Hero Image for My Writen Work"
                         width={1920} // Adjust based on your image
                         height={1080} // Adjust based on your image
                         className={styles.heroImage}
@@ -80,15 +80,15 @@ const MiddelEast = () => {
                                 <span className={styles.infoLabel}>
                                     <strong>Year:</strong>
                                 </span>
-                                <span className={styles.infoValue}> 2022</span>
+                                <span className={styles.infoValue}> 2024</span>
                             </div>
                             <div className={styles.infoField}>
                                 <span className={styles.infoLabel}>
-                                    <strong>Location:</strong>
+                                    <strong>Client:</strong>
                                 </span>
                                 <span className={styles.infoValue}>
                                     {" "}
-                                    GCD, Central Saint Martins
+                                    Personal
                                 </span>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const MiddelEast = () => {
                         {/* Conditional Button with Placeholder */}
                         {true ? ( // Set this to `false` when you want to hide the button
                             <IconButton
-                                href="https://maya.jack-robertson.co.uk/"
+                                href="https://written.jack-robertson.co.uk/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.viewSiteButton}
@@ -132,7 +132,7 @@ const MiddelEast = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                        In 2021, I observed a noticeable decline in Western media coverage of conflicts in the Middle East. This prompted me to pursue my dissertation, “A New Way of Seeing: Visualizing the Middle East Wars.” In this work, I examined how information design can deepen our understanding of the human and political scale of impact, destruction and displacement in the region. As part of my research, I conducted a series of workshops where participants filled over 200 meters of scrolls with data. Each dot on the scrolls represented a civilan life lost in the Middle East conflicts, while participants also shared their knowledge and perspectives, illustrating the scale and complexity of the wars.
+                        Explore my portfolio of written work, where I delve into a range of interconnected design narratives and systems, including Climate, Water, and Sustainability. Each article offers my unique insights and perspectives on these pressing issues and more. With new content released weekly, you’ll find an evolving exploration of topics at the intersection of technology, design, and environmental responsibility. Whether it’s about innovative solutions or deeper societal implications, my work aims to provoke thought and inspire action. Check back every week for fresh ideas and engaging content that reflects my ongoing research and creative exploration.
                         </p>
                     </div>
                 </div>
@@ -141,8 +141,17 @@ const MiddelEast = () => {
                 <div className={styles.twoColumnGrid}>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image2_anhedj.png"
-                            alt="First Grid Image of my Middle East project"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449662/Jack1_min_xqwgom.png"
+                            alt="First Grid Image of my Writen Work portfolio"
+                            width={1920}
+                            height={1080}
+                            className={styles.gridImage}
+                        />
+                    </div>
+                    <div className={styles.gridItem}>
+                        <Image
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449665/Jack3_k97uxi.png"
+                            alt="Second Grid Image of my Writen Work portfolio"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -150,41 +159,14 @@ const MiddelEast = () => {
                     </div>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image3_w2kcfm.png"
-                            alt="Second Grid Image of my Middle East project"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449667/Jack4_oeys5m.png"
+                            alt= "Third Grid Image of my Writen Work portfolio"
                             width={600}
                             height={400}
                             className={styles.gridImage}
                         />
                     </div>
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png"
-                            alt= "Third Grid Image of my Middle East project"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                    </div>
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Fourth Grid Image of my Middle East project"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                    </div>
-
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Fifth Grid Image of my Middle East project"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                    </div>
+                 
                 </div>
 
                 <Divider
@@ -193,7 +175,7 @@ const MiddelEast = () => {
                         height: "2px", // Set height
                         width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
                         marginTop: "1em", // Margin top
-                        marginBottom: "1em", // Margin bottom
+                        marginBottom: "4em", // Margin bottom
                     }}
                 />
 
@@ -201,14 +183,13 @@ const MiddelEast = () => {
                 <QuoteWithImage
                     quote={
                         <>
-                            'Jack’s work demonstrates a clear, in-depth analysis of his creative and ethical position in
-                            relation to information design, especially concerning destruction and displacement in the
-                            Middle East.
-                            <b> - Kira Salter, Course Leader'</b>
+                            'Jack’s work offers a thoughtful exploration of the integration of AI within corporate environments, addressing both the potential benefits and the organisational barriers that may impact its widespread adoption.
+                            <b> - LinkedIn Commenter'</b>
                         </>
                     }
-                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727283850/Central_Saint_Martins_College_of_Arts_and_Design_King_27s_Cross_bdf4rf.jpg" // Replace with your image URL
-                    altText="Central Saint Martins College of Arts and Design King's Cross"
+                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727698909/Linkedinlogo_he4taa.png"
+
+                    altText="LinkedIn is the most important cross-industry professional network around, despite some well-grounded gripes many people have with the interface and service. Everyone serious about their career should have an account. - Internet"
                 />
 
                 {/* Call to Action */}
@@ -220,6 +201,7 @@ const MiddelEast = () => {
                         borderRadius: "30px",
                         color: "#fff",
                         padding: "10px 20px",
+                        marginTop: "4em",
                         fontSize: "1.1rem",
                         "&:hover": {
                             backgroundColor: "#2678a6",

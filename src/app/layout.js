@@ -1,8 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrollProvider from "./components/SmoothScrollProvider";
-import EmissionCalculator from "./components/Emission/EmissionCalculator";
+import EmissionCalculator from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import LoadingScreen from './components/LoadingScreen/LoadingScreen'; // Import the LoadingScreen
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,6 +79,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      <LoadingScreen /> {/* Load the loading screen */}
         {/* Apply smooth scrolling globally */}
         <SmoothScrollProvider>
           {/* Scroll to top on route change */}

@@ -66,8 +66,8 @@ const MiddelEast = () => {
                         </IconButton>
                     </div>
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449671/MainLanding_jw3v6e.png"
-                        alt="Hero Image for My Writen Work"
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449668/Main_Landing_woe1yb.png"
+                        alt="Hero Image for my Middle East project"
                         width={1920} // Adjust based on your image
                         height={1080} // Adjust based on your image
                         className={styles.heroImage}
@@ -80,16 +80,13 @@ const MiddelEast = () => {
                                 <span className={styles.infoLabel}>
                                     <strong>Year:</strong>
                                 </span>
-                                <span className={styles.infoValue}> 2024</span>
+                                <span className={styles.infoValue}> 2022</span>
                             </div>
                             <div className={styles.infoField}>
                                 <span className={styles.infoLabel}>
-                                    <strong>Client:</strong>
+                                    <strong>Location:</strong>
                                 </span>
-                                <span className={styles.infoValue}>
-                                    {" "}
-                                    Personal
-                                </span>
+                                <span className={styles.infoValue}> GCD, Central Saint Martins</span>
                             </div>
                         </div>
                         {/* Down arrow for desktop */}
@@ -107,9 +104,9 @@ const MiddelEast = () => {
                         )}
 
                         {/* Conditional Button with Placeholder */}
-                        {true ? ( // Set this to `false` when you want to hide the button
+                        {false ? ( // Set this to `false` when you want to hide the button
                             <IconButton
-                                href="https://written.jack-robertson.co.uk/"
+                                href="https://your-live-site-link.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.viewSiteButton}
@@ -132,7 +129,14 @@ const MiddelEast = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                        In 2021, I observed a noticeable decline in Western media coverage of conflicts in the Middle East. This prompted me to pursue my dissertation, “A New Way of Seeing: Visualizing the Middle East Wars.” In this work, I examined how information design can deepen our understanding of the human and political scale of impact, destruction and displacement in the region. As part of my research, I conducted a series of workshops where participants filled over 200 meters of scrolls with data. Each dot on the scrolls represented a civilan life lost in the Middle East conflicts, while participants also shared their knowledge and perspectives, illustrating the scale and complexity of the wars.
+                            In 2021, I observed a noticeable decline in Western media coverage of conflicts in the
+                            Middle East. This prompted me to pursue my dissertation, “A New Way of Seeing: Visualizing
+                            the Middle East Wars.” In this work, I examined how information design can deepen our
+                            understanding of the human and political scale of impact, destruction and displacement in
+                            the region. As part of my research, I conducted a series of workshops where participants
+                            filled over 200 meters of scrolls with data. Each dot on the scrolls represented a civilan
+                            life lost in the Middle East conflicts, while participants also shared their knowledge and
+                            perspectives, illustrating the scale and complexity of the wars.
                         </p>
                     </div>
                 </div>
@@ -141,16 +145,16 @@ const MiddelEast = () => {
                 <div className={styles.twoColumnGrid}>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449662/Jack1_min_xqwgom.png"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image2_anhedj.png"
                             alt="First Grid Image of my Middle East project"
-                            width={600}
-                            height={400}
+                            width={1920} // Adjust based on your image
+                            height={1080} // Adjust based on your image
                             className={styles.gridImage}
                         />
                     </div>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449665/Jack3_k97uxi.png"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image3_w2kcfm.png"
                             alt="Second Grid Image of my Middle East project"
                             width={600}
                             height={400}
@@ -159,8 +163,8 @@ const MiddelEast = () => {
                     </div>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449667/Jack4_oeys5m.png"
-                            alt= "Third Grid Image of my Middle East project"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png"
+                            alt="Third Grid Image of my Middle East project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -193,7 +197,7 @@ const MiddelEast = () => {
                         height: "2px", // Set height
                         width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
                         marginTop: "1em", // Margin top
-                        marginBottom: "1em", // Margin bottom
+                        marginBottom: "4em", // Margin bottom
                     }}
                 />
 
@@ -221,6 +225,8 @@ const MiddelEast = () => {
                         color: "#fff",
                         padding: "10px 20px",
                         fontSize: "1.1rem",
+                        marginTop: "4em",
+
                         "&:hover": {
                             backgroundColor: "#2678a6",
                             boxShadow: "0 6px 15px rgba(0, 0, 0, 0.2)",

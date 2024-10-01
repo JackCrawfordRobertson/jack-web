@@ -1,12 +1,11 @@
-/* Full width and height of the viewport */
 .fullScreenContainer {
   width: 100vw;
-  height: 100svh; /* Use svh unit instead of vh */
+  height: 100svh; /* Use svh for actual visible screen height on mobile */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Ensure children like scrollPill can use absolute positioning */
-  flex-direction: column; /* Stack content vertically by default */
+  position: relative; /* For absolute positioning of children */
+  flex-direction: column; /* Stack content vertically */
 }
 
 /* Centered div inside the full-screen container */
@@ -116,47 +115,46 @@
   }
 }
 
-/* Media query for mobile devices */
+/* Mobile Media Query */
 @media (max-width: 768px) {
   .fullScreenContainer {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack everything vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    height: 100vh; /* Ensure the full screen height is used */
-    position: relative; /* Set relative positioning to manage absolute child positioning */
-}
-
-  .centeredDiv {
-    text-align: left; /* Align the text */
-    width: 100%; /* Full width */
-    padding: 20px; /* Add padding for space */
     display: flex;
-    flex-direction: column; /* Keep content stacked vertically */
-    justify-content: space-between; /* Ensure space between quote and buttons */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh; /* Ensure full visible screen height on mobile */
+    position: relative;
   }
 
-/* Mobile CSS */
-.quoteContainer {
-  font-size: 6vw;
-  text-align: left;
-  max-width: 100%;
-  height: 350px; /* Set a fixed height */
-  margin-bottom: 20px;
-  overflow: hidden; /* Hide overflowing content */
-  padding: 0;
-}
+  .centeredDiv {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .quoteContainer {
+    font-size: 6vw;
+    text-align: left;
+    max-width: 100%;
+    height: auto; /* Auto height for dynamic content */
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 0;
+  }
 
   .clickableTexts {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns with equal width */
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 1em;
-    background-color: #fff; /* White background */
+    background-color: #fff;
     border-radius: 30px;
     position: relative;
     bottom: 20px;
-    animation: fadeInButtons 1s ease-in-out 1s forwards; /* Fade-in with delay */
+    animation: fadeInButtons 1s ease-in-out 1s forwards;
     justify-content: center;
     z-index: 1;
   }
@@ -166,12 +164,12 @@
     border-radius: 8px;
     cursor: pointer;
     text-align: left;
-    color: #3498db; /* Blue text */
+    color: #3498db;
     transition: color 0.3s ease-in-out;
   }
 
   .clickableTexts span.active {
-    color: #3498db; /* Keep text blue when active */
+    color: #3498db;
   }
 
   .clickableTexts span::after {
@@ -181,13 +179,9 @@
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #3498db; /* Blue underline */
+    background-color: #3498db;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
-
-  
-
-  
 }

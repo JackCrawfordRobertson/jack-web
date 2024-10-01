@@ -11,14 +11,12 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
-import { useMediaQuery } from '@mui/material';
+import {useMediaQuery} from "@mui/material";
 
-
-const DataJournalism = () => {
+const Maya = () => {
     const router = useRouter();
     const [isDesktop, setIsDesktop] = useState(true);
-    const isMobile = useMediaQuery('(max-width:768px)');
-
+    const isMobile = useMediaQuery("(max-width:768px)");
 
     useEffect(() => {
         const handleResize = () => {
@@ -52,9 +50,11 @@ const DataJournalism = () => {
             <div className={styles.marqueeContainer}>
                 <Marquee gradient={false} speed={50}>
                     <span className={styles.marqueeText}>
-                        Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data
-                        Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism
-                        &nbsp;&nbsp;&nbsp;&nbsp; Data Journalism
+                        Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
                     </span>
                 </Marquee>
             </div>
@@ -68,12 +68,10 @@ const DataJournalism = () => {
                         </IconButton>
                     </div>
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727373725/ICE-Research_Image_1_knwpm0.jpg"
-                        alt="Hero image of the data journalism project" 
-                        width={6030} 
-                        height={4000} 
-                        quality={100} // Optional: Adjust image quality (range: 0-100)
-                    priority={true}
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449660/Main_LandingMaya_vvzthe.png"
+                        alt="Hero Image for Maya"
+                        width={1920} // Adjust based on your image
+                        height={1080} // Adjust based on your image
                         className={styles.heroImage}
                     />
 
@@ -88,9 +86,12 @@ const DataJournalism = () => {
                             </div>
                             <div className={styles.infoField}>
                                 <span className={styles.infoLabel}>
-                                    <strong>Client:</strong>
+                                    <strong>Location:</strong>
                                 </span>
-                                <span className={styles.infoValue}> ICE Corporate Events</span>
+                                <span className={styles.infoValue}>
+                                    {" "}
+                                    MA Royal College of Art
+                                </span>
                             </div>
                         </div>
                         {/* Down arrow for desktop */}
@@ -107,15 +108,22 @@ const DataJournalism = () => {
                             </motion.div>
                         )}
 
-                        <IconButton
-                            href="https://research.ice-hub.biz/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.viewSiteButton}
-                            aria-label="View Live Site"
-                        >
-                            View Live Site
-                        </IconButton>
+                        {/* Conditional Button with Placeholder */}
+                        {true ? ( // Set this to `false` when you want to hide the button
+                            <IconButton
+                                href="https://maya.jack-robertson.co.uk/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.viewSiteButton}
+                                aria-label="View Live Site"
+                            >
+                                View Live Site
+                            </IconButton>
+                        ) : (
+                            <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
+                                {/* Placeholder for IconButton */}
+                            </div>
+                        )}
                     </div>
                 </div>
 
@@ -126,7 +134,7 @@ const DataJournalism = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                        As a data journalist for ICE-Hub, I produced articles and insights shaping the corporate events industry, using data-driven storytelling to inform and engage stakeholders. Additionally, I led a research project exploring innovative methods of data communication. By integrating diverse data sources and crafting a structured narrative, we developed an industry-first dashboard for the corporate events sector, revolutionising how data is interpreted and setting new standards for clarity and engagement.
+                        While studying for my MA in Digital Direction at the Royal College of Art, I focused on streamlining the pitching process between NGOs and international donors to secure funding for addressing water depletion caused by climate change. This led to the development of Maya, an innovative web-based platform that translates complex environmental data into actionable insights. Maya transforms dense water case studies from the Levant into accessible, design-driven narratives, facilitating better communication among stakeholders. After successful beta testing, Maya is now poised for expansion, aiming to empower global experts and communities in tackling the pressing issue of water scarcity.
                         </p>
                     </div>
                 </div>
@@ -135,8 +143,17 @@ const DataJournalism = () => {
                 <div className={styles.twoColumnGrid}>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image2_anhedj.png"
-                            alt="First Grid Image for Data Journalism page"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727703293/Jack4-min_yhv0v9.png"
+                            alt="First Grid Image of my Maya project"
+                            width={1920} // Adjust based on your image
+                            height={1080} // Adjust based on your image
+                            className={styles.gridImage}
+                        />
+                    </div>
+                    <div className={styles.gridItem}>
+                        <Image
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727703295/Jack1-min_a4jkxd.png"
+                            alt="Second Grid Image of my Maya project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
@@ -144,60 +161,38 @@ const DataJournalism = () => {
                     </div>
                     <div className={styles.gridItem}>
                         <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image3_w2kcfm.png"
-                            alt="Second Grid Image for Data Journalism page"
+                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727703297/Jack3-min_lvac56.png"
+                            alt= "Third Grid Image of my Maya project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
                         />
                     </div>
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png"
-                            alt="Third Grid Image for Data Journalism page"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                    </div>
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Forth Grid Image for Data Journalism page"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                    </div>
-
-                    <div className={styles.gridItem}>
-                        <Image
-                            src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107945/image5_u4xjin.png"
-                            alt="Fith Grid Image for Data Journalism page"
-                            width={600}
-                            height={400}
-                            className={styles.gridImage}
-                        />
-                     
-                    </div>
-                    
+                 
                 </div>
 
                 <Divider
-            sx={{
-                backgroundColor: "#3496d3", // Divider color
-                height: "2px", // Set height
-                width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
-                marginTop: "1em", // Margin top
-                marginBottom: "1em", // Margin bottom
-            }}
-        />
+                    sx={{
+                        backgroundColor: "#3496d3", // Divider color
+                        height: "2px", // Set height
+                        width: isMobile ? "100%" : "80%", // 100% on mobile, 80% on desktop
+                        marginTop: "1em", // Margin top
+                        marginBottom: "4em", // Margin bottom
+                    }}
+                />
 
                 {/* Project Quotes */}
                 <QuoteWithImage
-                    quote="'This project redefined how we approached storytelling through data.'"
-                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727107946/image1_mgf1z9.png" // Replace with your image URL
-                    altText="Image of person who said the quote"
+                    quote={
+                        <>
+                            'Jack’s work demonstrates a clear, in-depth analysis of his creative and ethical position in
+                            relation to information design, especially concerning destruction and displacement in the
+                            Middle East.
+                            <b> - Supervisor, MA Digital Direction'</b>
+                        </>
+                    }
+                    imageUrl="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727703615/royal-college-of-art-herzog-and-de-meuron_2_hfmzij.jpg" // Replace with your image URL
+                    altText="Royal College of Art Building"
                 />
 
                 {/* Call to Action */}
@@ -208,6 +203,7 @@ const DataJournalism = () => {
                         backgroundColor: "#3496d3",
                         borderRadius: "30px",
                         color: "#fff",
+                        marginTop: "4em",
                         padding: "10px 20px",
                         fontSize: "1.1rem",
                         "&:hover": {
@@ -229,4 +225,4 @@ const DataJournalism = () => {
     );
 };
 
-export default DataJournalism;
+export default Maya;

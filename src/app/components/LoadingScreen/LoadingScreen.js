@@ -1,22 +1,31 @@
-'use client'; // Ensure this is a client-side component
+'use client';
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import styles from './LoadingScreen.module.css'; // CSS Module for styling
-
-import blueLogo from '/public/Blue_Logo.svg'; // Path to your logo
+import blueLogo from '/public/Blue_Logo.svg';
+import styles from './LoadingScreen.module.css'; // Create this CSS file for styles
 
 const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  // Hide the loading screen after 3 seconds
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+    // Disable scrolling when loading
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
 
-    return () => clearTimeout(timer); // Clean up the timer on unmount
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Stop loading after 3 seconds
+      // Re-enable scrolling when loading is complete
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+      document.documentElement.style.overflow = '';
+      document.body.style.overflow = '';
+    };
   }, []);
 
   return (
@@ -24,27 +33,26 @@ const LoadingScreen = () => {
       {isLoading && (
         <motion.div
           className={styles.loadingScreen}
-          initial={{ opacity: 1 }} // Loading screen starts fully visible
-          exit={{ opacity: 0 }} // Fade out the loading screen
-          transition={{ duration: 1 }} // Fade-out duration
+          initial={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1 }}
         >
           <motion.div
             className={styles.logoContainer}
-            initial={{ opacity: 0, scale: 0.3, rotate: 0 }} // Logo starts hidden and small
-            animate={{ opacity: 1, scale: 1, rotate: 360 }} // Logo becomes visible, spins, and grows
+            initial={{ opacity: 0, scale: 0.3 }}
+            animate={{ opacity: 1, scale: 1, rotate: 360 }}
             transition={{
-              type: 'spring', // Use spring physics
-              stiffness: 80,  // Lower stiffness for a softer bounce
-              damping: 20,    // Increase damping to reduce oscillation
-              mass: 1,        // A heavier mass will slow down the motion
-              duration: 2.5,  // Slow down the entire animation
+              type: 'spring',
+              stiffness: 80,
+              damping: 20,
+              duration: 2.5,
             }}
           >
             <Image
               src={blueLogo}
               alt="Loading Logo"
-              width={150} // Adjust the width as needed
-              height={150} // Adjust the height as needed
+              width={150}
+              height={150}
               priority
             />
           </motion.div>

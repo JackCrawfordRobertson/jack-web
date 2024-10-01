@@ -13,7 +13,7 @@
 .quoteText {
     flex: 1;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: regular;
     color: #3496d3;
     text-align: left;
     line-height: 1;
