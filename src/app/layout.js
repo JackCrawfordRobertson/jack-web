@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Jack Crawford Robertson",
   description:
-    "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life, thriving as a catalyst for creativity.",
+    "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life.",
   keywords: [
     "storytelling",
     "narratives",
@@ -27,7 +27,7 @@ export const metadata = {
   openGraph: {
     title: "Jack Crawford Robertson",
     description:
-      "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life, thriving as a catalyst for creativity.",
+      "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life.",
     url: "https://jack-robertson.co.uk/",
     type: "website",
     site_name: "Jack Crawford Robertson",
@@ -69,7 +69,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Jack Crawford Robertson",
     description:
-      "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life, thriving as a catalyst for creativity.",
+      "I am an information designer, data thinker, and artist. As a communicator, I navigate context and design constraints to bring projects to life.",
     creator: "@JackRobertso",
   },
   other: {
