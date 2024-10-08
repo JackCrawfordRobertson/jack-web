@@ -239,25 +239,7 @@
     color: white;
 }
 
-/* View Site Button */
-.viewSiteButton {
-    background-color: white;
-    color: #3496d3;
-    font-size: 1.2rem;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    width: 200px;
-}
 
-.viewSiteButton:hover {
-    background-color: white;
-    color: #3496d3;
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-}
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {

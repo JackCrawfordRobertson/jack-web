@@ -115,10 +115,10 @@ const WrittenWork = () => {
                             href="https://written.jack-robertson.co.uk/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={styles.viewSiteButton} // Make sure this class is defined properly in your CSS
                             aria-label="View Live Site"
                             style={{
                                 backgroundColor: "#fff", // Customise the button background color to white
+                                fontSize: "1.2rem", // Set the font size to match your theme
                                 color: "#3496d3", // Set the text color to match your theme
                                 textTransform: "none", // Prevent uppercase transformation of text
                                 padding: "12px 20px", // Add consistent padding for the button

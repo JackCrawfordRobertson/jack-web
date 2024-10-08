@@ -11,7 +11,7 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
-import { Button } from "@mui/material"; // Import Button from Material UI
+import {Button} from "@mui/material"; // Import Button from Material UI
 import {useMediaQuery} from "@mui/material";
 
 const DataJournalism = () => {
@@ -105,22 +105,28 @@ const DataJournalism = () => {
                             </motion.div>
                         )}
 
-<Button
-    variant="contained" // You can also use 'outlined' or 'text' based on your design
-    href="https://research.ice-hub.biz/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={styles.viewSiteButton} // Custom styles can still be applied
-    aria-label="View Live Site"
-    style={{
-        marginTop: "20px",
-        backgroundColor: "#fff", // Customize the button color
-        color: "#3496d3", // Text color
-        textTransform: "none", // Prevent uppercase transformation
-    }}
->
-    View Live Site
-</Button>
+                        <Button
+                            variant="contained" // You can use 'contained' or 'outlined'
+                            href="https://research.ice-hub.biz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Live Site"
+                            style={{
+                                backgroundColor: "#fff", // Customise the button background color to white
+                                fontSize: "1.2rem", // Set the font size to match your theme
+                                color: "#3496d3", // Set the text color to match your theme
+                                textTransform: "none", // Prevent uppercase transformation of text
+                                padding: "12px 20px", // Add consistent padding for the button
+                                borderRadius: "12px", // Rounded corners for the button
+                                fontWeight: "bold", // Bold text
+                                boxShadow: "0 4px 15px rgba(255, 255, 255, 0.1)", // Subtle shadow
+                                transition: "background-color 0.3s ease, transform 0.3s ease", // Smooth transition effects
+                            }}
+                            onMouseOver={() => (document.body.style.cursor = "pointer")}
+                            onMouseOut={() => (document.body.style.cursor = "default")}
+                        >
+                            View Live Site
+                        </Button>
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@ import {motion, AnimatePresence} from "framer-motion"; // For animations
 import LoadingScreenPage from "../../components/LoadingScreen/LoadingScreenPage"; // Import the loading screen
 import QuoteWithImage from "./QuoteWithImage";
 import Divider from "@mui/material/Divider";
-import { Button } from "@mui/material"; // Import Button from Material UI
+import {Button} from "@mui/material"; // Import Button from Material UI
 import {useMediaQuery} from "@mui/material";
 
 const Maya = () => {
@@ -51,10 +51,9 @@ const Maya = () => {
             <div className={styles.marqueeContainer}>
                 <Marquee gradient={false} speed={50}>
                     <span className={styles.marqueeText}>
-                        Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
-                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
                         &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
-                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
+                        &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
                         &nbsp;&nbsp;&nbsp;&nbsp; Maya &nbsp;&nbsp;&nbsp;&nbsp; Maya
                     </span>
                 </Marquee>
@@ -89,10 +88,7 @@ const Maya = () => {
                                 <span className={styles.infoLabel}>
                                     <strong>Location:</strong>
                                 </span>
-                                <span className={styles.infoValue}>
-                                    {" "}
-                                    MA Royal College of Art
-                                </span>
+                                <span className={styles.infoValue}> MA Royal College of Art</span>
                             </div>
                         </div>
                         {/* Down arrow for desktop */}
@@ -110,29 +106,35 @@ const Maya = () => {
                         )}
 
                         {/* Conditional Button with Placeholder */}
-                       {/* Conditional Button with Placeholder */}
-                       {true ? ( // Set this to `false` when you want to hide the button
-                              <Button
-                              variant="contained"
-                              href="https://maya.jack-robertson.co.uk/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={styles.viewSiteButton}
-                              style={{
-                                marginTop: "20px",
-                                backgroundColor: "#fff", // Customize the button color
-                                color: "#3496d3", // Text color
-                                textTransform: "none", // Prevent uppercase transformation
-                            }}
-                          >
-                              View Live Site
-                          </Button>
+                        {/* Conditional Button with Placeholder */}
+                        {true ? ( // Set this to `false` when you want to hide the button
+                            <Button
+                                variant="contained" // You can use 'contained' or 'outlined'
+                                href="https://maya.jack-robertson.co.uk/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View Live Site"
+                                style={{
+                                    backgroundColor: "#fff", // Customise the button background color to white
+                                    fontSize: "1.2rem", // Set the font size to match your theme
+                                    color: "#3496d3", // Set the text color to match your theme
+                                    textTransform: "none", // Prevent uppercase transformation of text
+                                    padding: "12px 20px", // Add consistent padding for the button
+                                    borderRadius: "12px", // Rounded corners for the button
+                                    fontWeight: "bold", // Bold text
+                                    boxShadow: "0 4px 15px rgba(255, 255, 255, 0.1)", // Subtle shadow
+                                    transition: "background-color 0.3s ease, transform 0.3s ease", // Smooth transition effects
+                                }}
+                                onMouseOver={() => (document.body.style.cursor = "pointer")}
+                                onMouseOut={() => (document.body.style.cursor = "default")}
+                            >
+                                View Live Site
+                            </Button>
                         ) : (
                             <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
                                 {/* Placeholder for IconButton */}
                             </div>
                         )}
-                    
                     </div>
                 </div>
 
@@ -143,7 +145,14 @@ const Maya = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                        While studying for my MA in Digital Direction at the Royal College of Art, I focused on streamlining the pitching process between NGOs and international donors to secure funding for addressing water depletion caused by climate change. This led to the development of Maya, an innovative web-based platform that translates complex environmental data into actionable insights. Maya transforms dense water case studies from the Levant into accessible, design-driven narratives, facilitating better communication among stakeholders. After successful beta testing, Maya is now poised for expansion, aiming to empower global experts and communities in tackling the pressing issue of water scarcity.
+                            While studying for my MA in Digital Direction at the Royal College of Art, I focused on
+                            streamlining the pitching process between NGOs and international donors to secure funding
+                            for addressing water depletion caused by climate change. This led to the development of
+                            Maya, an innovative web-based platform that translates complex environmental data into
+                            actionable insights. Maya transforms dense water case studies from the Levant into
+                            accessible, design-driven narratives, facilitating better communication among stakeholders.
+                            After successful beta testing, Maya is now poised for expansion, aiming to empower global
+                            experts and communities in tackling the pressing issue of water scarcity.
                         </p>
                     </div>
                 </div>
@@ -171,13 +180,12 @@ const Maya = () => {
                     <div className={styles.gridItem}>
                         <Image
                             src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727703297/Jack3-min_lvac56.png"
-                            alt= "Third Grid Image of my Maya project"
+                            alt="Third Grid Image of my Maya project"
                             width={600}
                             height={400}
                             className={styles.gridImage}
                         />
                     </div>
-                 
                 </div>
 
                 <Divider

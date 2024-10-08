@@ -144,24 +144,6 @@
     color: #3496d3;
 }
 
-/* Call-to-Action Button */
-.ctaButton {
-    margin-top: 50px;
-    padding: 12px 30px;
-    background-color: white;
-    color: #3496d3;
-    font-size: 1.1rem;
-    border: 2px solid #3496d3;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.ctaButton:hover {
-    background-color: #3496d3;
-    color: white;
-    transform: scale(1.05);
-}
 
 /* Marquee Section */
 .marqueeContainer {
@@ -235,26 +217,6 @@
 .infoValue {
     font-weight: 400;
     color: white;
-}
-
-/* View Site Button */
-.viewSiteButton {
-    background-color: white;
-    color: #3496d3;
-    font-size: 1.2rem;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    width: 200px;
-}
-
-.viewSiteButton:hover {
-    background-color: white;
-    color: #3496d3;
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Mobile Adjustments */
