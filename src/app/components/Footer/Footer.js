@@ -48,7 +48,7 @@ function Footer() {
                 {/* Contact Button and GitHub/LinkedIn Icons */}
                 <div className={styles.icons}>
                     <IconButton
-                        href="https://github.com/your-username" // Replace with your GitHub link
+                        href="https://github.com/JackCrawfordRobertson" // Replace with your GitHub link
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -57,7 +57,7 @@ function Footer() {
                     </IconButton>
 
                     <IconButton
-                        href="https://www.linkedin.com/in/your-profile/" // Replace with your LinkedIn profile
+                        href="https://www.linkedin.com/in/jackcrobertson" // Replace with your LinkedIn profile
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"

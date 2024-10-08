@@ -65,7 +65,7 @@ export default function Home() {
                             title="Maya"
                             description="Maya redefines environmental communication by transforming complex data into clear, actionable insights, fostering collaboration to address water scarcity in the Middle East."
                             quote1="Infomation Design"
-                            quote2="Communication Srategy"
+                            quote2="Communication Strategy"
                         />
                     </Link>
 
