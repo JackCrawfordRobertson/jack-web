@@ -47,8 +47,6 @@
     align-self: flex-start; /* Align back button to the top */
 }
 
- 
-
 .gridItem:nth-child(1) {
     grid-column: span 2; /* First image spans both columns */
 }

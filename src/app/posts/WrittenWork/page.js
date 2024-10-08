@@ -14,7 +14,7 @@ import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import {useMediaQuery} from "@mui/material";
 
-const MiddelEast = () => {
+const WrittenWork = () => {
     const router = useRouter();
     const [isDesktop, setIsDesktop] = useState(true);
     const isMobile = useMediaQuery("(max-width:768px)");
@@ -110,15 +110,28 @@ const MiddelEast = () => {
 
                         {/* Conditional Button with Placeholder */}
                         {true ? ( // Set this to `false` when you want to hide the button
-                            <IconButton
-                                href="https://written.jack-robertson.co.uk/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.viewSiteButton}
-                                aria-label="View Live Site"
-                            >
-                                View Live Site
-                            </IconButton>
+                            <Button
+                            variant="contained" // You can use 'contained' or 'outlined'
+                            href="https://written.jack-robertson.co.uk/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.viewSiteButton} // Make sure this class is defined properly in your CSS
+                            aria-label="View Live Site"
+                            style={{
+                                backgroundColor: "#fff", // Customise the button background color to white
+                                color: "#3496d3", // Set the text color to match your theme
+                                textTransform: "none", // Prevent uppercase transformation of text
+                                padding: "12px 20px", // Add consistent padding for the button
+                                borderRadius: "12px", // Rounded corners for the button
+                                fontWeight: "bold", // Bold text
+                                boxShadow: "0 4px 15px rgba(255, 255, 255, 0.1)", // Subtle shadow
+                                transition: "background-color 0.3s ease, transform 0.3s ease", // Smooth transition effects
+                            }}
+                            onMouseOver={() => (document.body.style.cursor = 'pointer')}
+                            onMouseOut={() => (document.body.style.cursor = 'default')}
+                        >
+                            View Live Site
+                        </Button>
                         ) : (
                             <div style={{width: "200px", height: "auto", visibility: "hidden"}}>
                                 {/* Placeholder for IconButton */}
@@ -224,4 +237,4 @@ const MiddelEast = () => {
     );
 };
 
-export default MiddelEast;
+export default WrittenWork;
