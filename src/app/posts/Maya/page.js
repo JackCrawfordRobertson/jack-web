@@ -145,14 +145,7 @@ const Maya = () => {
                     </div>
                     <div className={styles.descriptionText}>
                         <p>
-                            While studying for my MA in Digital Direction at the Royal College of Art, I focused on
-                            streamlining the pitching process between NGOs and international donors to secure funding
-                            for addressing water depletion caused by climate change. This led to the development of
-                            Maya, an innovative web-based platform that translates complex environmental data into
-                            actionable insights. Maya transforms dense water case studies from the Levant into
-                            accessible, design-driven narratives, facilitating better communication among stakeholders.
-                            After successful beta testing, Maya is now poised for expansion, aiming to empower global
-                            experts and communities in tackling the pressing issue of water scarcity.
+                        While studying for my MA in Digital Direction at the Royal College of Art, I created Maya, a web-based platform that streamlines the pitching process between NGOs and international donors to secure funding for water depletion projects caused by climate change. Maya translates complex environmental data into actionable insights, transforming dense water case studies from the Levant into accessible, design-driven narratives. This facilitates better communication among stakeholders. After successful beta testing, Maya is now ready for expansion, aiming to empower global experts and communities in addressing water scarcity.
                         </p>
                     </div>
                 </div>
