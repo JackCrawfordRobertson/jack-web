@@ -14,7 +14,7 @@ const CV = () => {
                     <p style={{ color: "#f0f8ff" }}>You can download my full CV from the links below:</p>
 
                     {/* MUI Buttons for Download */}
-                    <a href="/files/Jack Robertson-D" download>
+                    <a href="/files/Jack Robertson-D.PDF" download>
                         <Button
                             variant="contained"
                             style={{
