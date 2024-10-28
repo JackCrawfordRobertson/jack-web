@@ -5,8 +5,7 @@ import EmissionCalculator from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import LoadingScreen from './components/LoadingScreen/LoadingScreen'; // Import the LoadingScreen
 import OrientationLock from './components/OrientationLock'; // Import the OrientationLock component
- 
-
+import ThemeProviderWrapper from './components/ThemeProviderWrapper'; // Import the ThemeProviderWrapper
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -81,17 +80,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <LoadingScreen /> {/* Load the loading screen */}
-      <OrientationLock /> {/* Render the orientation lock */}
+        <LoadingScreen /> {/* Load the loading screen */}
+        <OrientationLock /> {/* Render the orientation lock */}
 
         {/* Apply smooth scrolling globally */}
         <SmoothScrollProvider>
           {/* Scroll to top on route change */}
           <ScrollToTop />
-          {/* Your page content */}
-          {children}
-          {/* Global Footer */}
-          <EmissionCalculator /> {/* Footer globally added */}
+          {/* Wrap the application with ThemeProviderWrapper */}
+          <ThemeProviderWrapper>
+            {/* Your page content */}
+            {children}
+            {/* Global Footer */}
+            <EmissionCalculator /> {/* Footer globally added */}
+          </ThemeProviderWrapper>
         </SmoothScrollProvider>
       </body>
     </html>
