@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -10,8 +10,11 @@ const theme = createTheme({
       contrastText: '#fff',
     },
     secondary: {
-      main: '#fff',
+      main: '#3496d3',
       contrastText: '#3496d3',
+    },
+    background: {
+      default: '#3496d3', // Ensures global background is blue
     },
   },
   typography: {
@@ -38,6 +41,7 @@ const theme = createTheme({
 export default function ThemeProviderWrapper({ children }) {
   return (
     <ThemeProvider theme={theme}>
+      {/* CssBaseline respects background color set in theme */}
       <CssBaseline />
       {children}
     </ThemeProvider>

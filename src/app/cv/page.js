@@ -2,22 +2,21 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@mui/material"; // Import MUI Button
+import { Button } from "@mui/material";
 
 const CV = () => {
     return (
-        <main style={{ padding: "20px", fontFamily: "inter, sans-serif", minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <main style={{ padding: "20px", fontFamily: "inter, sans-serif", minHeight: "70vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: '#3496d3' }}>
             <div className="container">
                 {/* Title, Subtext, and Download Button */}
                 <div className="content">
-                    <h1>Jack Robertson's CV</h1>
-                    <p>You can download my full CV from the links below:</p>
+                    <h1 style={{ color: "#fff" }}>Jack Robertson's CV</h1>
+                    <p style={{ color: "#f0f8ff" }}>You can download my full CV from the links below:</p>
 
                     {/* MUI Buttons for Download */}
                     <a href="/files/Jack Robertson-D" download>
                         <Button
                             variant="contained"
-                            color="primary"
                             style={{
                                 marginTop: "20px",
                                 padding: "10px 20px",
@@ -34,7 +33,6 @@ const CV = () => {
                     <a href="/files/Jack_Robertson_CV.pdf" download>
                         <Button
                             variant="contained"
-                            color="secondary"
                             style={{
                                 marginTop: "20px",
                                 padding: "10px 20px",
@@ -73,12 +71,12 @@ const CV = () => {
                     display: flex;
                     align-items: flex-start;
                     gap: 40px;
-                    width: 80%; /* Container width */
-                    margin: 0 auto; /* Center container on screen */
+                    width: 80%;
+                    margin: 0 auto;
                 }
 
                 .content {
-                    flex: 1; /* Take up 60% of container width */
+                    flex: 1;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -86,7 +84,7 @@ const CV = () => {
                 }
 
                 .image-container {
-                    flex: 0 0 50%; /* Take up 40% of container width */
+                    flex: 0 0 50%;
                 }
 
                 @media (max-width: 768px) {
