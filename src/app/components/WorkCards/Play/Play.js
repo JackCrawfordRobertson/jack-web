@@ -102,7 +102,7 @@ const Play = () => {
                 <div className={styles.workCardSub}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.workCardTitle}>Home Automation</h3>
-                        <p className={styles.workCardDescription}>I used Python and Apple HomeKit to create a smart home setup with automated temperature monitoring and security features, making home a little smarter and safer!</p>
+                        <p className={styles.workCardDescription}>I powered up my home with Python and Apple HomeKit, adding smart temperature tracking and security features to keep things comfy and secure!</p>
                     </div>
                 </div>
             </motion.a>
