@@ -38,7 +38,7 @@ const Play = () => {
                 <div className={styles.workCardSub}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.workCardTitle}>PINTS!</h3>
-                        <p className={styles.workCardDescription}>Looking for a cheap beer in central London but still want a nice pub? Pints has you covered, share your location and discover the three cheapest pints within 1,000 meters of you. Best viewed on mobile</p>
+                        <p className={styles.workCardDescription}>Looking for a cheap beer in central London but still want a nice pub? Pints has you covered, share your location and discover the three cheapest pints within 1,000 meters of you. Best viewed on mobile.</p>
                     </div>
                 </div>
             </motion.a>
@@ -75,8 +75,8 @@ const Play = () => {
                 </div>
             </motion.a>
 
-            {/* <motion.a
-                href="https://written.jack-robertson.co.uk/" // Add link target here
+            <motion.a
+                href="https://www.apple.com/uk/home-app/" // Add link target here
                 className={styles.workCard}
                 target="_blank" // Opens link in a new tab
                 rel="noopener noreferrer" // Security feature to prevent access to window.opener
@@ -92,7 +92,7 @@ const Play = () => {
                     transition={{type: "spring", stiffness: 300}}
                 >
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1726768155/image5_u37xei.png"
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1731436228/Cover_Image_Compress_PNG_bsumda.png"
                         alt="Project 3"
                         fill
                     
@@ -101,11 +101,11 @@ const Play = () => {
                 </motion.div>
                 <div className={styles.workCardSub}>
                     <div className={styles.cardContent}>
-                        <h3 className={styles.workCardTitle}>Project 3</h3>
-                        <p className={styles.workCardDescription}>A short description of project 3.</p>
+                        <h3 className={styles.workCardTitle}>Home Automation</h3>
+                        <p className={styles.workCardDescription}>I used Python and Apple HomeKit to create a smart home setup with automated temperature monitoring and security features, making home a little smarter and safer!</p>
                     </div>
                 </div>
-            </motion.a> */}
+            </motion.a>
         </div>
     );
 };

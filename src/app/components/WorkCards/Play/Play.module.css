@@ -5,12 +5,12 @@
   margin: 0 auto;
   gap: 1em;
   margin-bottom: 1em;
-  flex-wrap: wrap; /* Ensure cards wrap when there's no more space */
+  flex-wrap: wrap; /* Ensures cards wrap when there's no more space */
 }
 
 .workCard {
   position: relative;
-  width: 48%; /* Each card takes 48% of the width on desktop */
+  width: 30%; /* Each card takes 30% of the width on desktop */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@
 .workCardTitle {
   font-size: 3rem; /* Adjust title size */
   margin-bottom: 0.5rem;
-
+  line-height: .9;
 }
 
 .workCardDescription {
@@ -83,8 +83,13 @@
     margin-bottom: 1rem; /* Add some space between the stacked cards */
   }
 
+  .workCardsContainer {
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 1rem; /* Adjust gap between cards for mobile */
+  }
+
   .workCardTitle {
-    font-size: 3rem; /* Adjust title size */
+    font-size: 2.5rem; /* Adjust title size */
     margin-bottom: 0.5rem;
   line-height: .9;
   }
