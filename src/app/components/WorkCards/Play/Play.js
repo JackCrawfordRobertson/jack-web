@@ -69,7 +69,7 @@ const Play = () => {
                 </motion.div>
                 <div className={styles.workCardSub}>
                     <div className={styles.cardContent}>
-                        <h3 className={styles.workCardTitle}>Writen Work</h3>
+                        <h3 className={styles.workCardTitle}>Written Work</h3>
                         <p className={styles.workCardDescription}>Explore my weekly articles and design narratives where I share insights on climate, water, sustainability, and related systems.</p>
                     </div>
                 </div>
