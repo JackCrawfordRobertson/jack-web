@@ -32,7 +32,7 @@ export default function Home() {
                     <Link href="/posts/DataJournalism" passHref>
                         <LeftCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449663/Main-4_tv0vto.png" // Optimized Cloudinary URL
-                            title="Data Journalism"
+                            title="Infomation Design"
                             description="Working with ICE-HUB to craft new ways of data storytelling."
                             quote1="Brand Perception"
                             quote2="Sustainability Goals"
