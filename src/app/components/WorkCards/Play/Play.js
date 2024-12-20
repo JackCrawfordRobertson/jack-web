@@ -44,7 +44,7 @@ const Play = () => {
             </motion.a>
 
             <motion.a
-                href="https://written.jack-robertson.co.uk/" // Add link target here
+                href="https://aspect.jack-robertson.co.uk/" // Add link target here
                 className={styles.workCard}
                 target="_blank" // Opens link in a new tab
                 rel="noopener noreferrer" // Security feature to prevent access to window.opener
@@ -60,8 +60,8 @@ const Play = () => {
                     transition={{type: "spring", stiffness: 300}}
                 >
                     <Image
-                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449670/Main_lplvgj.png"
-                        alt="Writen work hero Image"
+                        src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1734696763/Compress_PNG_Aspect_rxhuk2.png"
+                        alt="Aspect hero Image"
                         fill
                       
                         className={styles.workCardImage}
@@ -69,8 +69,8 @@ const Play = () => {
                 </motion.div>
                 <div className={styles.workCardSub}>
                     <div className={styles.cardContent}>
-                        <h3 className={styles.workCardTitle}>Written Work</h3>
-                        <p className={styles.workCardDescription}>Explore my weekly articles and design narratives where I share insights on climate, water, sustainability, and related systems.</p>
+                        <h3 className={styles.workCardTitle}>Aspect</h3>
+                        <p className={styles.workCardDescription}>Your house, your movies, no arguments. Aspect is the app that makes choosing tonight’s film as easy as hitting play.</p>
                     </div>
                 </div>
             </motion.a>
