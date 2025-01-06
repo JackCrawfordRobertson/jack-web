@@ -27,8 +27,21 @@ const CallToAction = () => {
       {/* Title and Button */}
       <div className={styles.textContainer}>
         <button className={styles.emailButton} onClick={handleCopyEmail}>
-        Let's Chat!
+          Let's Chat!
         </button>
+
+        {/* CV Link */}
+        <p className={styles.cvText}>
+          Check out my CV{" "}
+          <a
+            href="https://jack-robertson.co.uk/cv"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.cvLink}
+          >
+            here
+          </a>.
+        </p>
       </div>
 
       {/* Notification for copied email */}

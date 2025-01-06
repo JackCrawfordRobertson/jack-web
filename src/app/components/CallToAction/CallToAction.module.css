@@ -8,7 +8,7 @@
 }
 
 .image {
-  margin-right: 20px; /* Space between image and text */
+  margin-right: 3rem; /* Space between image and text */
   border-radius: 500px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.1); /* Feathered shadow */
 }
@@ -49,6 +49,18 @@
   font-size: 1rem;
   opacity: 0.9;
   z-index: 10;
+}
+
+.cvText {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.cvLink {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) { /* For mobile and tablet screens */
