@@ -11,7 +11,7 @@ const CV = () => {
                 {/* Title, Subtext, and Download Button */}
                 <div className="content">
                     <h1 style={{ color: "#fff" }}>Jack Robertson's CV</h1>
-                    <p style={{ color: "#f0f8ff" }}>You can download my full CV from the links below:</p>
+                    <p style={{ color: "#f0f8ff" }}>You can download my full CV from the link below:</p>
 
                     <a href="/files/Jack_Robertson_CV.pdf" download>
                         <Button
