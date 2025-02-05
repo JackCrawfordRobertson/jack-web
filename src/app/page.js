@@ -32,7 +32,7 @@ export default function Home() {
                     <Link href="/posts/DataJournalism" passHref>
                         <LeftCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449663/Main-4_tv0vto.png" // Optimized Cloudinary URL
-                            title="Infomation Design"
+                            title="Digital Strategist"
                             description="Working with ICE-HUB to craft new ways of data storytelling."
                             quote1="Brand Perception"
                             quote2="Sustainability Goals"
@@ -48,6 +48,17 @@ export default function Home() {
                             quote2="Data investigation"
                         />
                     </Link>
+
+                    <FunSection />
+                    <Divider
+                        sx={{
+                            backgroundColor: "white", // Set color to white
+                            height: "2px", // Set height to 1px
+                            width: "100%", // Full width
+                            marginBottom: "20px",
+                        }}
+                    />
+                    <Play />
 
                     <div className={styles.title}>What I've done.</div>
 
@@ -81,31 +92,15 @@ export default function Home() {
 
                     <Link href="/posts/MiddelEast" passHref>
                         <LeftCard
-                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449659/wholebook_oj5bln.jpg"
+                          image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449659/wholebook_oj5bln.jpg"
                             title="Middle East"
                             description="In 2021, I explored how information design can reveal the human and political impact of Middle East conflicts through data-driven visualisation and collaborative workshops."
                             quote1="Communicating Complexity"
                             quote2="Workshoping"
                         />
                     </Link>
-                    <Divider
-                        sx={{
-                            backgroundColor: "white", // Set color to white
-                            height: "2px", // Set height to 1px
-                            width: "100%", // Full width
-                            marginBottom: "20px",
-                        }}
-                    />
-                    <FunSection />
-                    <Divider
-                        sx={{
-                            backgroundColor: "white", // Set color to white
-                            height: "2px", // Set height to 1px
-                            width: "100%", // Full width
-                            marginBottom: "20px",
-                        }}
-                    />
-                    <Play />
+                  
+                   
                     <Divider
                         sx={{
                             backgroundColor: "white", // Set color to white
