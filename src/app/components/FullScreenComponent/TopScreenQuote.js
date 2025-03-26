@@ -29,7 +29,7 @@ const FullScreenComponent = () => {
     const quotes = {
         "for anyone": "I explore how storytelling can unravel complex systems like economics and politics. Through playfulness and curiosity, I create engaging experiences to help people better understand the world around us.",
         "for designers": "I use storytelling, visual communication and design to make complex systems like politics and economics more accessible. By blending creativity with curiosity, I push the boundaries of innovative, meaningful experiences.",
-        "for recruiters": "As a strategist, I transform complex systems into engaging narratives, from economics to politics. I thrive on using creativity and design thinking to make real-world impacts through collaborative work.",
+        "for recruiters": "As a strategist, I transform complex systems into engaging narratives, from economics to politics. I thrive while using creativity and design to make real-world impacts through collaborative work.",
         "for engineers": "I’m not a {software engineer} / but I know how to {communicate complex systems}; I speak {fluently} with developers // {translating ideas} => {engaging, interactive experiences}.y",
     };
 
