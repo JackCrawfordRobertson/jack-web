@@ -21,24 +21,9 @@
 
 }
 
-/* Dark Mode Variables */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255; /* Keep text white in dark mode */
-    --background-color: #3496d3; /* Same background color in dark mode */
-
-    --primary-glow: none;
-    --secondary-glow: none;
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: none;
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+/* Force light mode - disable system dark mode preferences */
+html {
+  color-scheme: light !important;
 }
 
 /* Global Reset */
@@ -78,13 +63,6 @@ html, body {
 
 html::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Edge */
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 .className {

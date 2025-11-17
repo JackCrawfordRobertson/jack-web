@@ -29,23 +29,13 @@ export default function Home() {
                         }}
                     />
 
-                    <Link href="/posts/DataJournalism" passHref>
-                        <LeftCard
-                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449663/Main-4_tv0vto.png" // Optimized Cloudinary URL
-                            title="Digital Strategist"
-                            description="Working with ICE-HUB to craft new ways of data storytelling."
-                            quote1="Brand Perception"
-                            quote2="Sustainability Goals"
-                        />
-                    </Link>
-
-                    <Link href="/posts/WrittenWork" passHref>
+                    <Link href="/posts/PaymentsAssociation" passHref>
                         <RightCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449670/Main_lplvgj.png"
-                            title="Written Work"
-                            description="Discover my weekly articles and design stories, where I share fresh insights on climate, water, sustainability, and beyond."
-                            quote1="Narrative"
-                            quote2="Data investigation"
+                            title="The Payments Association"
+                            description="Data Journalist exploring the intersection of payments, data, and public discourse. I research emerging trends, speak at industry conferences, and host a podcast diving deep into the stories behind the data."
+                            quote1="Public Speaking"
+                            quote2="Data Communication"
                         />
                     </Link>
 
@@ -70,8 +60,18 @@ export default function Home() {
                         }}
                     />
 
-                    <Link href="/posts/Maya" passHref>
+                    <Link href="/posts/DataJournalism" passHref>
                         <LeftCard
+                            image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449663/Main-4_tv0vto.png"
+                            title="Digital Strategist"
+                            description="Working with ICE-HUB to craft new ways of data storytelling."
+                            quote1="Brand Perception"
+                            quote2="Sustainability Goals"
+                        />
+                    </Link>
+
+                    <Link href="/posts/Maya" passHref>
+                        <RightCard
                             image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449666/MainMaya_loyeb3.png"
                             title="Maya"
                             description="Maya redefines environmental communication by transforming complex data into clear, actionable insights, fostering collaboration to address water scarcity in the Middle East."
@@ -81,23 +81,13 @@ export default function Home() {
                     </Link>
 
                     <Link href="/posts/Advertising" passHref>
-                    <RightCard
+                    <LeftCard
                         image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449658/Main-3_dpbvls.png"
                         title="Advertising"
                         description="Working with brands like HSBC and the Royal Opera House, I helped shape stories through bold branding and creative innovation."
                         quote1="Production"
                         quote2="Creative Communication"
                     />
-                    </Link>
-
-                    <Link href="/posts/MiddelEast" passHref>
-                        <LeftCard
-                          image="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727449659/wholebook_oj5bln.jpg"
-                            title="Middle East"
-                            description="In 2021, I explored how information design can reveal the human and political impact of Middle East conflicts through data-driven visualisation and collaborative workshops."
-                            quote1="Communicating Complexity"
-                            quote2="Workshoping"
-                        />
                     </Link>
                   
                    

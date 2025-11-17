@@ -6,7 +6,18 @@ export default function ScrollToTop() {
   const pathname = usePathname(); // Track the route change
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top on route change
+    // Use requestAnimationFrame to ensure scroll happens after render
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'auto' // Use auto since smooth is in CSS
+      });
+    };
+
+    // Give the browser a moment to render the new page
+    const timer = setTimeout(scrollToTop, 50);
+
+    return () => clearTimeout(timer);
   }, [pathname]);
 
   return null; // No UI to render, just functionality

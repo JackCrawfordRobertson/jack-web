@@ -1,0 +1,56 @@
+/* QuoteWithImage.module.css */
+
+.quoteContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 20px; /* Space between text and image */
+}
+
+.quoteText {
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: regular;
+    color: #3496d3;
+    text-align: left;
+    line-height: 1;
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Circular image with shadow */
+.quoteImage {
+    border-radius: 50%; /* Make the image a perfect circle */
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Add shadow */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .quoteContainer {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .quoteText {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+
+    }
+
+   .quoteImage {
+        width: 80vw; /* Adjust size for smaller screens while keeping the image circular */
+        height: 80vw; /* Keep width and height equal */
+    }
+}

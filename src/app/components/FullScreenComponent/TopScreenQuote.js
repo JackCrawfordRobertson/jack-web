@@ -27,10 +27,10 @@ const FullScreenComponent = () => {
     }, []);
 
     const quotes = {
-        "for anyone": "I explore how storytelling can unravel complex systems like economics and politics. Through playfulness and curiosity, I create engaging experiences to help people better understand the world around us.",
-        "for designers": "I use storytelling, visual communication and design to make complex systems like politics and economics more accessible. By blending creativity with curiosity, I push the boundaries of innovative, meaningful experiences.",
-        "for recruiters": "As a strategist, I transform complex systems into engaging narratives, from economics to politics. I thrive while using creativity and design to make real-world impacts through collaborative work.",
-        "for engineers": "I’m not a {software engineer} / but I know how to {communicate complex systems}; I speak {fluently} with developers // {translating ideas} => {engaging, interactive experiences}.y",
+        "for anyone": "I'm a data journalist specialising in making payments and fintech intelligence accessible to everyone. I transform complex topics like merchant payments, financial crime, and digital inclusion into clear, compelling stories that help you navigate the evolving payments landscape.",
+        "for designers": "I combine data-driven storytelling with strategic analysis to make challenging payments and fintech topics understandable. My work in fraud prevention, regulatory compliance, and digital commerce innovation uses powerful visualisations to turn complex data into compelling narratives.",
+        "for recruiters": "I'm a data journalist with expertise in payments intelligence, merchant payments, financial crime prevention, and digital inclusion. I transform industry data into actionable insights that drive meaningful conversations among payments leaders and help organisations navigate the fintech landscape.",
+        "for engineers": "I'm not a {software engineer} / but I know how to {communicate payments intelligence}; I speak {fluently} with data & narrative // {merchant payments, fraud prevention, regulatory intelligence, inclusion} => {accessible, actionable insights for stakeholders}.",
     };
 
     return (
