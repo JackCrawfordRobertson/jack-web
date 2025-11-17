@@ -82,12 +82,18 @@
 /* Compact Gallery Grid for Speaking Section */
 .compactGalleryGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
     max-width: 900px;
     margin: 30px auto 0;
     padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .compactGalleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {

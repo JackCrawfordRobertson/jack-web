@@ -259,22 +259,35 @@ const PaymentsAssociation = () => {
                     <div className={styles.compactGalleryGrid}>
                         <div className={styles.galleryItem}>
                             <Image
-                                src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727702487/Jack3-min_sriu3s.png"
-                                alt="Speaking at payments conference"
+                                src="https://res.cloudinary.com/dmlmugaye/image/upload/v1763395121/1_vsa3o2.jpg"
+                                alt="Speaking on stage at conference"
                                 width={400}
                                 height={300}
                                 className={styles.galleryImage}
-                            />
-                        </div>
-                        <div className={styles.galleryItem}>
+                                />
+                       
+                                </div>
+                              <div className={styles.galleryItem}>
                             <Image
-                                src="https://res.cloudinary.com/dfsznxwhz/image/upload/v1727702486/Jack4-min_bqbxqx.png"
-                                alt="Speaking at payments conference"
+                                src="https://res.cloudinary.com/dmlmugaye/image/upload/v1763395121/3_jbvlze.jpg"
+                                alt="Speaking on stage at conference"
                                 width={400}
                                 height={300}
                                 className={styles.galleryImage}
                             />
                         </div>
+                         <div className={styles.galleryItem}>
+                            <Image
+                                src="https://res.cloudinary.com/dmlmugaye/image/upload/v1763395120/2_dfhcgu.jpg"
+                                alt="Speaking on stage at conference"
+                                width={400}
+                                height={300}
+                                className={styles.galleryImage}
+                            />
+                        </div>
+                  
+                       
+                        
                     </div>
                 </div>
 
